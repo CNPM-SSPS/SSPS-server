@@ -1,4 +1,3 @@
-
-npm run lint
-npm run format
+npx run lint
+npx run format
 git add .
