@@ -28,7 +28,7 @@ const printerSchema = mongoose.Schema({
 });
 
 printerSchema.methods.getLocation = () => {
-  // return `${this.room}, ${this.building}, ${this.campus}`;
+   return `${this.room}, ${this.building}, ${this.campus}`;
 };
 
 const Printer = mongoose.model('Printer', printerSchema);
