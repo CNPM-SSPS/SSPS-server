@@ -1,32 +1,59 @@
 import mongoose from 'mongoose';
 import { toJSON } from './plugins/index.js';
-import PrintingFile from './printingFile.model.js';
-import { ref } from 'joi';
 
-const PrintingLogSchema = new mongoose.Schema({
+
+const printingFileSchema = mongoose.Schema({
+    fileName: {
+      type: String,
+      required: true
+    },
+    fileType: {
+      type: String,
+      required: true
+    },
+    pageSize: {
+      type: String,
+      required: true
+    },
+    pageCount: {
+      type: Number,
+      required: true
+    },
+    pageColor: {
+      type: String,
+      required: true
+    },
+    pageMaterial: {
+      type: String,
+      required: true
+    }
+    // Soft, hard, ...
+  });
+
+
+const PrintingLogSchema = mongoose.Schema({
+    user: {
+      type: mongoose.SchemaTypes.ObjectId,
+      ref: 'User'
+    },
+    printer: {
+      type: mongoose.SchemaTypes.ObjectId,
+      ref: 'Printer'
+    },
     date: {
-        type: Date,
-        default: Date.now,
-        required: true
+      type: Date,
+      default: Date.now
     },
-    file: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'PrintingFile'
-    }],
-    studentID: {
-        type: mongoose.SchemaTypes.ObjectId,
-        ref: 'User',
-        required: true
-    },
-    printerID: {
-        type: mongoose.SchemaTypes.ObjectId,
-        ref: 'Printer',
-        required: true
+    file: {
+      type: [printingFileSchema],
+      required: true
     }
 });
+
 
 PrintingLogSchema.plugin(toJSON);
 
 const PrintingLog = mongoose.model('PrintingLog', PrintingLogSchema);
+
 
 export default PrintingLog;

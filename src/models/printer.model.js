@@ -24,6 +24,10 @@ const printerSchema = mongoose.Schema({
   brand: {
     type: String,
     required: true
+  },
+  enabled: {
+    type: Boolean,
+    default: true
   }
 });
 

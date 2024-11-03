@@ -3,13 +3,8 @@ import { toJSON } from './plugins/index.js';
 import PrintingLog from './printingLog.model.js';
 import TransactionLog from './transactionLog.model.js';
 import User from './user.model.js';
-import { type } from 'os';
-import { strict } from 'assert';
-import { string } from 'joi';
 
-const User = mongoose.model('User');
-
-const StudentSchema = User.discriminator('Student', mongoose.Schema({
+const StudentSchema = new mongoose.Schema({
     studentID: {
         type: String,
         required: true,
@@ -19,22 +14,22 @@ const StudentSchema = User.discriminator('Student', mongoose.Schema({
         type: String,
         required: true
     },
-    paper:[
+    paper: [
         {
-            pageCount:{
+            pageCount: {
                 type: Number,
                 required: true
             },
-            pageType:{
+            pageType: {
                 type: String,
                 required: true
             }
         }
     ]
-}));
+});
 
-StudentSchema.methods.getHistory = function() {
-    const printingLogs = PrintingLog.find({studentID: this.studentID});
+StudentSchema.methods.getHistory = async function() {
+    const printingLogs = await PrintingLog.find({ studentID: this.studentID });
     return printingLogs;
 };
 
@@ -70,6 +65,6 @@ StudentSchema.methods.useInventory = function(pageCount, pageType) {
 
 StudentSchema.plugin(toJSON);
 
-const Student = mongoose.model('Student');
+const Student = User.discriminator('Student', StudentSchema);
 
 export default Student;
