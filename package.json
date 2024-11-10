@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "node --watch --env-file=.env src/index.js ",
+    "render-deploy": "node src/index.js",
     "lint": "eslint",
     "format": "prettier src test --write",
     "prepare": "husky"
