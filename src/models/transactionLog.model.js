@@ -1,31 +1,40 @@
 import mongoose from 'mongoose';
 import { toJSON } from './plugins/index.js';
 
-
-const transactionLogSchema = mongoose.Schema(
-    {
-        pageCount:{
-            type: Number,
-            required: true
-        },
-        date:{
-            type: Date,
-            required: true
-        },
-        studentID:{
-            type: Number,
-            required: true
-        },
-        transactionCode:{
-            type: String,
-            required: true
-        },
-        system:{
-            type: String,
-            required: true
-        }
-    }
-);
+const transactionLogSchema = mongoose.Schema({
+  studentID: {
+    type: mongoose.SchemaTypes.ObjectId,
+    ref: 'User',
+    required: true
+  },
+  transactionID: {
+    type: String,
+    unique: true,
+    required: true
+  },
+  pageCount: {
+    type: Number,
+    required: true
+  },
+  money: {
+    type: Number,
+    required: true
+  },
+  createDate: {
+    type: Date,
+    default: Date.now,
+    required: true
+  },
+  completed: {
+    type: Boolean,
+    index: true,
+    required: true
+  },
+  ipAddr: {
+    type: String,
+    default: '127.0.0.1'
+  }
+});
 
 transactionLogSchema.plugin(toJSON);
 

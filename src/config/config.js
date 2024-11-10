@@ -23,7 +23,12 @@ const envSchema = Joi.object()
       .description('minutes after which reset password token expires'),
     JWT_VERIFY_EMAIL_EXPIRATION_MINUTES: Joi.number()
       .default(10)
-      .description('minutes after which verify email token expires')
+      .description('minutes after which verify email token expires'),
+    VNPAY_TMNCODE: Joi.string().required(),
+    VNPAY_HASHSECRET: Joi.string().required(),
+    VNPAY_HASH_ALG: Joi.string().required(),
+    VNPAY_PAYURL_SBOX: Joi.string().required(),
+    VNPAY_PAYQUERY_SBOX: Joi.string().required()
   })
   .unknown();
 
@@ -51,5 +56,10 @@ export default {
     refreshExpirationDays: envVars.JWT_REFRESH_EXPIRATION_DAYS,
     resetPasswordExpirationMinutes: envVars.JWT_RESET_PASSWORD_EXPIRATION_MINUTES,
     verifyEmailExpirationMinutes: envVars.JWT_VERIFY_EMAIL_EXPIRATION_MINUTES
+  },
+  vnpay: {
+    tmn: envVars.VNPAY_TMNCODE,
+    hashSecret: envVars.VNPAY_HASHSECRET,
+    hashAlgo: envVars.VNPAY_HASH_ALG
   }
 };
