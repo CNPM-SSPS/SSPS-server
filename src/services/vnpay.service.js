@@ -12,12 +12,13 @@ import {
 import vnpayConfig from '../config/vnpay.js';
 import config from '../config/config.js';
 import { TransactionLog } from '../models/index.js';
+import moment from 'moment-timezone';
 
 const paymentExpireDate = () => {
   const PAYMENT_EXPIRE_TIME = 30 * 60 * 1000; // 30 minutes
   const expireDate = new Date();
   expireDate.setTime(expireDate.getTime() + PAYMENT_EXPIRE_TIME);
-  return expireDate;
+  return Number(moment(expireDate).tz('Asia/Ho_Chi_Minh').format('YYYYMMDDHHmmss'));
 };
 
 export const createPaymentURL = async (amount, orderInfo, transID, ipAddr = '127.0.01') => {
@@ -29,7 +30,7 @@ export const createPaymentURL = async (amount, orderInfo, transID, ipAddr = '127
     vnp_OrderType: ProductCode.Pay,
     vnp_ReturnUrl: `http://${config.hostName}:${config.port}/v1/pay/redirect-return`,
     vnp_Locale: VnpLocale.VN,
-    vnp_ExpireDate: dateFormat(paymentExpireDate())
+    vnp_ExpireDate: paymentExpireDate()
   });
 };
 
