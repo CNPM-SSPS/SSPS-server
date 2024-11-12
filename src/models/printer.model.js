@@ -28,6 +28,18 @@ const printerSchema = mongoose.Schema({
   enabled: {
     type: Boolean,
     default: true
+  },
+  deleted:{
+    type: Boolean,
+    default: false
+  },
+  dateAdded: {
+    type: Date,
+    default: Date.now
+  },
+  lastModified: {
+    type: Date,
+    default: Date.now
   }
 });
 

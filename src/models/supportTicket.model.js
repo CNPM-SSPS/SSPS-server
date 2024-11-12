@@ -6,9 +6,9 @@ const supportTicketSchema = mongoose.Schema({
     ref: 'User',
     required: true
   },
-  printer: {
+  printinglog: {
     type: mongoose.SchemaTypes.ObjectId,
-    ref: 'Printer'
+    ref: 'PrintingLog',
   },
   officer: {
     type: mongoose.SchemaTypes.ObjectId,
@@ -32,6 +32,10 @@ const supportTicketSchema = mongoose.Schema({
   },
   closedAt: {
     type: Date
+  },
+  printingErrorID: {
+    type: String,
+    default: null
   }
 });
 

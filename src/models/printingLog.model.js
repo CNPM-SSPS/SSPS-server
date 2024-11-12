@@ -1,53 +1,60 @@
 import mongoose from 'mongoose';
 import { toJSON } from './plugins/index.js';
+import uploadFile from './uploadFile.model.js';
 
-
-const printingFileSchema = mongoose.Schema({
-    fileName: {
-      type: String,
-      required: true
-    },
-    fileType: {
-      type: String,
-      required: true
-    },
-    pageSize: {
-      type: String,
-      required: true
-    },
-    pageCount: {
-      type: Number,
-      required: true
-    },
-    pageColor: {
-      type: String,
-      required: true
-    },
-    pageMaterial: {
-      type: String,
-      required: true
-    }
-    // Soft, hard, ...
-  });
 
 
 const PrintingLogSchema = mongoose.Schema({
     user: {
       type: mongoose.SchemaTypes.ObjectId,
-      ref: 'User'
+      ref: 'User',
+      required: true
     },
     printer: {
       type: mongoose.SchemaTypes.ObjectId,
-      ref: 'Printer'
+      ref: 'Printer',
+      required: true
     },
     date: {
       type: Date,
       default: Date.now
     },
-    file: {
-      type: [printingFileSchema],
+    printingFile: {
+      type: mongoose.SchemaTypes.ObjectId,
+      ref: 'uploadFile',
+      required: true
+    },
+    status: {
+      type: String,
+      default: 'success',
+    },
+    printingErrorID: {
+      type: String,
+      default: null
+    },
+    color:{
+      type: Boolean,
+      default: false,
+      required: true
+    },
+    printType:{
+      type: String,
+      required: true
+    },
+    printCount:{
+      type: Number,
+      required: true
+    },
+    supportTicketID: {
+      type: mongoose.SchemaTypes.ObjectId,
+      ref: 'SupportTicket',
+      default: null
+    },
+    totalCost: {
+      type: Number,
       required: true
     }
+
 });
 
 

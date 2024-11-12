@@ -1,12 +1,27 @@
 import mongoose from "mongoose";
 import SupportTicket from "../models/supportTicket.model.js";
 
-export const createSupportTicket = async (req, res) => {
-    const { student, printer, description } = req.body;
+export const createSupportTicketByStudent = async (req, res) => {
+    const {description , printinglog} = req.body;
+    const student = req.user._id;
     try {
-        const newSupportTicket = await SupportTicket.create({ student, printer, description });
+        const newSupportTicket = await SupportTicket.create({ student, printinglog, description });
         res.status(201).json(newSupportTicket);
     } catch (error) {
+        res.status(400).json({ message: error.message });
+    }
+}
+
+export const updateSupportTicketByOfficer = async (req, res) => {
+    const { supportTicketID } = req.params;
+    const { response } = req.body;
+    //const officer = req.user._id;
+    try {
+        const updatedSupportTicket = await SupportTicket
+        .findByIdAndUpdate(supportTicketID, { response, status : 'closed', closedAt: new Date() }, { new: true });
+        res.status(200).json(updatedSupportTicket);
+    }
+    catch (error) {
         res.status(400).json({ message: error.message });
     }
 }
