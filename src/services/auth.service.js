@@ -4,6 +4,10 @@ import userService from './user.service.js';
 import Token from '../models/token.model.js';
 import ApiError from '../utils/ApiError.js';
 import { tokenTypes } from '../config/tokens.js';
+// import sendEmail from '../utils/senEmail.js';
+import config from '../config/config.js';
+import moment from 'moment';
+import User from '../models/user.model.js';
 
 /**
  * Login with username and password
@@ -46,13 +50,37 @@ const refreshAuth = async (refreshToken) => {
     const refreshTokenDoc = await tokenService.verifyToken(refreshToken, tokenTypes.REFRESH);
     const user = await userService.getUserById(refreshTokenDoc.user);
     if (!user) {
-      throw new Error();
+      throw new ApiError(httpStatus.UNAUTHORIZED, 'User not found');
     }
-    await refreshTokenDoc.remove();
-    return tokenService.generateAuthTokens(user);
+    if (!refreshTokenDoc) {
+      throw new ApiError(httpStatus.NOT_FOUND, 'Not found token');
+    }
+    const accessTokenExpires = moment().add(config.jwt.accessExpirationMinutes, 'minutes');
+    const accessToken = tokenService.generateAccessToken(user.id, accessTokenExpires);
+
+    return {
+      access: {
+        token: accessToken,
+        expires: accessTokenExpires.toDate()
+      },
+      refresh: {
+        token: refreshToken,
+        expires: refreshTokenDoc.expires
+      }
+    };
   } catch (error) {
-    throw new ApiError(httpStatus.UNAUTHORIZED, 'Please authenticate');
+    throw new ApiError(httpStatus.UNAUTHORIZED, 'Please authenticate', error);
   }
+};
+
+const forgotPassword = async (email) => {
+  const user = await User.findOne({ email });
+  if (!user) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'No user found with this email');
+  }
+  const resetPasswordToken = await tokenService.generateResetPasswordToken(email);
+  await sendPasswordResetEmail(user.email, resetPasswordToken);
+  return resetPasswordToken;
 };
 
 /**
@@ -78,6 +106,16 @@ const resetPassword = async (resetPasswordToken, newPassword) => {
   }
 };
 
+const sendPasswordResetEmail = async (email, token) => {
+  const resetPasswordUrl = `http://localhost:8080/v1/auth/reset-password?token=${token}`;
+  const text = `This is development mode, send many email is blocked. This is message send to ${email}:\n Click this link to submit this is your email: ${resetPasswordUrl}`;
+
+  return text;
+
+  // For production
+  // await sendEmail(email, 'Reset Password', text);
+};
+
 /**
  * Verify email
  * @param {string} verifyEmailToken
@@ -100,10 +138,40 @@ const verifyEmail = async (verifyEmailToken) => {
   }
 };
 
+const sendVerificationEmail = async (email, token) => {
+  try {
+    const message = `http://localhost:8080/v1/auth/verify-email?token=${token}`;
+    // development mode
+    const data = `This is development mode, send many email is blocked. This is message send to ${email}:\n Click this link to verify your email: ${message}`;
+    return data;
+    // production mode
+    // await sendEmail({
+    //   to: email,
+    //   subject: 'Reset password',
+    //   text: message
+    // });
+  } catch (error) {
+    throw new ApiError(httpStatus.INTERNAL_SERVER_ERROR, 'Email sending failed');
+  }
+};
+
+const changePassword = async (user, body) => {
+  const { currentPassword, newPassword } = body;
+  if (!(await user.isPasswordMatch(currentPassword))) {
+    throw new ApiError(httpStatus.UNAUTHORIZED, 'Current password is incorrect');
+  }
+  await userService.updateUserById(user.id, { password: newPassword });
+  return user;
+};
+
 export default {
   loginUserWithEmailAndPassword,
   logout,
   refreshAuth,
   resetPassword,
-  verifyEmail
+  verifyEmail,
+  sendVerificationEmail,
+  changePassword,
+  forgotPassword,
+  sendPasswordResetEmail
 };
