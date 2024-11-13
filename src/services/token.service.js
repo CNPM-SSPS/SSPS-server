@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken';
 import moment from 'moment';
 import httpStatus from 'http-status';
 import config from '../config/config.js';
-import * as userService from './user.service.js';
+import userService from './user.service.js';
 import { Token } from '../models/index.js';
 import ApiError from '../utils/ApiError.js';
 import { tokenTypes } from '../config/tokens.js';
@@ -23,6 +23,22 @@ const generateToken = (userId, expires, type, secret = config.jwt.secret) => {
     type
   };
   return jwt.sign(payload, secret);
+};
+
+/**
+ * Generate access token
+ * @param {ObjectId} userId
+ * @param {Moment} expires
+ * @returns {string}
+ */
+const generateAccessToken = (userId, expires) => {
+  const payload = {
+    sub: userId,
+    iat: moment().unix(),
+    exp: expires.unix(),
+    type: tokenTypes.ACCESS
+  };
+  return jwt.sign(payload, config.jwt.secret);
 };
 
 /**
@@ -119,5 +135,6 @@ export default {
   verifyToken,
   generateAuthTokens,
   generateResetPasswordToken,
-  generateVerifyEmailToken
+  generateVerifyEmailToken,
+  generateAccessToken
 };

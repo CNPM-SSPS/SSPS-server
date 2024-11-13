@@ -10,6 +10,30 @@ router.post('/register', validate(authValidation.register), authController.regis
 router.post('/login', validate(authValidation.login), authController.login);
 router.post('/logout', validate(authValidation.logout), authController.logout);
 
+router.post(
+  '/refresh-tokens',
+  validate(authValidation.refreshTokens),
+  authController.refreshTokens
+);
+router.post('/send-verification-email', authController.sendVerificationEmail);
+router.get('/verify-email', validate(authValidation.verifyEmail), authController.verifyEmail);
+// change password
+router.post(
+  '/change-password',
+  auth(),
+  validate(authValidation.changePassword),
+  authController.changePassword
+);
+router.post(
+  '/forgot-password',
+  validate(authValidation.forgotPassword),
+  authController.forgotPassword
+);
+router
+  .route('/reset-password')
+  .get(authController.resetPassword)
+  .post(validate(authValidation.resetPassword), authController.resetPassword);
+
 export default router;
 
 /**
