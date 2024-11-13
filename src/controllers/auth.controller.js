@@ -15,6 +15,11 @@ const register = catchAsync(async (req, res) => {
 const login = catchAsync(async (req, res) => {
   const { email, password } = req.body;
   const user = await authService.loginUserWithEmailAndPassword(email, password);
+  if (!user.isEmailVerified) {
+    return res
+      .status(httpStatus.UNAUTHORIZED)
+      .send({ message: 'Email is not verified, plese check your email for verification link' });
+  }
   const tokens = await tokenService.generateAuthTokens(user);
   res.send({ user, tokens });
 });

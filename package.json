@@ -31,7 +31,7 @@
     "mongoose": "^8.7.1",
     "mongoose-delete": "^1.0.2",
     "multer": "^1.4.5-lts.1",
-    "nodemailer": "^6.9.15",
+    "nodemailer": "^6.9.16",
     "nodemailer.js": "^0.0.2-security",
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",

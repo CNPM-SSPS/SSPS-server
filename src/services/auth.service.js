@@ -107,11 +107,9 @@ const resetPassword = async (resetPasswordToken, newPassword) => {
 };
 
 const sendPasswordResetEmail = async (email, token) => {
-  const resetPasswordUrl = `http://localhost:8080/v1/auth/reset-password?token=${token}`;
-  const text = `This is development mode, send many email is blocked. This is message send to ${email}:\n Click this link to submit this is your email: ${resetPasswordUrl}`;
-
-  return text;
-
+  const link = `http://localhost:8080/v1/auth/reset-password?token=${token}`;
+  const text = `This is development mode, send many email is blocked. This is message send to ${email}:\n Click this link to submit this is your email:`;
+  return { text, link };
   // For production
   // await sendEmail(email, 'Reset Password', text);
 };
@@ -140,10 +138,10 @@ const verifyEmail = async (verifyEmailToken) => {
 
 const sendVerificationEmail = async (email, token) => {
   try {
-    const message = `http://localhost:8080/v1/auth/verify-email?token=${token}`;
+    const link = `http://localhost:8080/v1/auth/verify-email?token=${token}`;
     // development mode
-    const data = `This is development mode, send many email is blocked. This is message send to ${email}:\n Click this link to verify your email: ${message}`;
-    return data;
+    const data = `This is development mode, send many email is blocked. This is message send to ${email}:\n Click this link to verify your email:`;
+    return { data, link };
     // production mode
     // await sendEmail({
     //   to: email,
