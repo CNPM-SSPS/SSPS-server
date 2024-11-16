@@ -1,11 +1,11 @@
-const { Strategy: JwtStrategy, ExtractJwt } = require('passport-jwt');
-const config = require('./config');
-const { User } = require('../models');
-const { tokenTypes } = require('./tokens');
+import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt';
+import config from './config.js';
+import { User } from '../models/index.js';
+import { tokenTypes } from './tokens.js';
 
 const jwtOptions = {
   secretOrKey: config.jwt.secret,
-  jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+  jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken()
 };
 
 const jwtVerify = async (payload, done) => {
@@ -18,14 +18,13 @@ const jwtVerify = async (payload, done) => {
       return done(null, false);
     }
     done(null, user);
-  }
-  catch (error) {
+  } catch (error) {
     done(error, false);
   }
 };
 
 const jwtStrategy = new JwtStrategy(jwtOptions, jwtVerify);
 
-module.exports = {
-  jwtStrategy,
+export default {
+  jwtStrategy
 };

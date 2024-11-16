@@ -1,3 +1,3 @@
-module.exports.authService = require('./auth.service');
-module.exports.tokenService = require('./token.service');
-module.exports.userService = require('./user.service');
+export { default as authService } from './auth.service.js';
+export { default as tokenService } from './token.service.js';
+export { default as userService } from './user.service.js';

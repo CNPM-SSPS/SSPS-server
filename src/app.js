@@ -1,12 +1,13 @@
-const express = require('express');
-const passport = require('passport');
-const cors = require('cors');
-const httpStatus = require('http-status');
-const config = require('./config/config');
-const { jwtStrategy } = require('./config/passport');
-const routes = require('./routes/v1');
+import express from 'express';
+import passport from 'passport';
+import cors from 'cors';
+import httpStatus from 'http-status';
+import config from './config/config.js';
+import jwtStrategy from './config/passport.js';
+import routes from './routes/v1/index.js';
+import globalErrorHandler from './middlewares/globalErrorHandler.js';
 
-const app = express();
+export const app = express();
 
 // parse json request body
 app.use(express.json());
@@ -25,6 +26,7 @@ passport.use('jwt', jwtStrategy);
 // v1 api routes
 app.use('/v1', routes);
 
+// error handler middleware
+app.use(globalErrorHandler);
 
-
-module.exports = app;
+console.log(config);

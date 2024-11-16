@@ -1,11 +1,11 @@
-const jwt = require('jsonwebtoken');
-const moment = require('moment');
-const httpStatus = require('http-status');
-const config = require('../config/config');
-const userService = require('./user.service');
-const { Token } = require('../models');
-const ApiError = require('../utils/ApiError');
-const { tokenTypes } = require('../config/tokens');
+import jwt from 'jsonwebtoken';
+import moment from 'moment';
+import httpStatus from 'http-status';
+import config from '../config/config.js';
+import * as userService from './user.service.js';
+import { Token } from '../models/index.js';
+import ApiError from '../utils/ApiError.js';
+import { tokenTypes } from '../config/tokens.js';
 
 /**
  * Generate token
@@ -20,7 +20,7 @@ const generateToken = (userId, expires, type, secret = config.jwt.secret) => {
     sub: userId,
     iat: moment().unix(),
     exp: expires.unix(),
-    type,
+    type
   };
   return jwt.sign(payload, secret);
 };
@@ -40,7 +40,7 @@ const saveToken = async (token, userId, expires, type, blacklisted = false) => {
     user: userId,
     expires: expires.toDate(),
     type,
-    blacklisted,
+    blacklisted
   });
   return tokenDoc;
 };
@@ -76,12 +76,12 @@ const generateAuthTokens = async (user) => {
   return {
     access: {
       token: accessToken,
-      expires: accessTokenExpires.toDate(),
+      expires: accessTokenExpires.toDate()
     },
     refresh: {
       token: refreshToken,
-      expires: refreshTokenExpires.toDate(),
-    },
+      expires: refreshTokenExpires.toDate()
+    }
   };
 };
 
@@ -113,11 +113,11 @@ const generateVerifyEmailToken = async (user) => {
   return verifyEmailToken;
 };
 
-module.exports = {
+export default {
   generateToken,
   saveToken,
   verifyToken,
   generateAuthTokens,
   generateResetPasswordToken,
-  generateVerifyEmailToken,
+  generateVerifyEmailToken
 };

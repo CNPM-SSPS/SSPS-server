@@ -1,28 +1,25 @@
-const Joi = require('joi');
-const { password } = require('./custom.validation');
+import Joi from 'joi';
+import { password } from './custom.validation.js';
 
-const register = {
-    body: Joi.object().keys({
-        name: Joi.string().required(),
-        email: Joi.string().required().email(),
-        password: Joi.string().required().custom(password),
-    }),
-};
-const login = {
-    body: Joi.object().keys({
-        email: Joi.string().required(),
-        password: Joi.string().required(),
-    }),
+export const register = {
+  body: Joi.object().keys({
+    name: Joi.string().required(),
+    email: Joi.string().required().email(),
+    password: password.required()
+  })
 };
 
-const logout = {
-    body: Joi.object().keys({
-        refreshToken: Joi.string().required(),
-    }),
+export const login = {
+  body: Joi.object().keys({
+    email: Joi.string().required(),
+    password: Joi.string().required()
+  })
 };
 
-module.exports = {
-    register,
-    login,
-    logout,
+export const logout = {
+  body: Joi.object().keys({
+    refreshToken: Joi.string().required()
+  })
 };
+
+export default { register, login, logout };

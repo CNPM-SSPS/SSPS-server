@@ -1,18 +1,16 @@
-const express = require('express');
-const validate = require('../../middlewares/validate');  // 1
-const authValidation = require('../../validations/auth.validation'); //2 
-const authController = require('../../controllers/auth.controller');
-const auth = require('../../middlewares/auth'); // 3
- 
+import express from 'express';
+import validate from '../../middlewares/validate.js'; // 1
+import authValidation from '../../validations/auth.validation.js'; //2
+import authController from '../../controllers/auth.controller.js';
+import auth from '../../middlewares/auth.js'; // 3
 
 const router = express.Router();
-
 
 router.post('/register', validate(authValidation.register), authController.register);
 router.post('/login', validate(authValidation.login), authController.login);
 router.post('/logout', validate(authValidation.logout), authController.logout);
 
-module.exports = router;
+export default router;
 
 /**
  * @swagger
