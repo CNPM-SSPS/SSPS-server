@@ -5,6 +5,11 @@ import TransactionLog from './transactionLog.model.js';
 import User from './user.model.js';
 
 const StudentSchema = new mongoose.Schema({
+    user: {
+        type: mongoose.SchemaTypes.ObjectId,
+        ref: 'User',
+        required: true
+    },
     studentID: {
         type: String,
         required: true,
