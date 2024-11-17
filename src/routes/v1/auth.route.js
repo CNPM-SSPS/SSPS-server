@@ -168,3 +168,121 @@ export default router;
  *                   items:
  *                     type: object
  */
+
+/**
+ * @swagger
+ * /v1/auth/refresh-tokens:
+ *   post:
+ *     summary: Refresh auth tokens
+ *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - refreshToken
+ *             properties:
+ *               refreshToken:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Tokens refreshed successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 access:
+ *                   type: object
+ *                   properties:
+ *                     token:
+ *                       type: string
+ *                     expires:
+ *                       type: string
+ *                       format: date-time
+ *                 refresh:
+ *                   type: object
+ *                   properties:
+ *                     token:
+ *                       type: string
+ *                     expires:
+ *                       type: string
+ *                       format: date-time
+ */
+
+/**
+ * @swagger
+ * /v1/auth/send-verification-email:
+ *   post:
+ *     summary: Send verification email
+ *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *     responses:
+ *       200:
+ *         description: Verification email sent successfully
+ */
+
+/**
+ * @swagger
+ * /v1/auth/change-password:
+ *   post:
+ *     summary: Change password
+ *     tags: [Auth]
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - currentPassword
+ *               - newPassword
+ *             properties:
+ *               currentPassword:
+ *                 type: string
+ *                 format: password
+ *               newPassword:
+ *                 type: string
+ *                 format: password
+ *     responses:
+ *       200:
+ *         description: Password changed successfully
+ */
+
+/**
+ * @swagger
+ * /v1/auth/forgot-password:
+ *   post:
+ *     summary: Forgot password
+ *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *     responses:
+ *       200:
+ *         description: Reset password email sent successfully
+ */
