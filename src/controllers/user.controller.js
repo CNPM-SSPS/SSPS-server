@@ -1,3 +1,4 @@
+import mongoose from 'mongoose';
 import httpStatus from 'http-status';
 import pick from '../utils/pick.js';
 import ApiError from '../utils/ApiError.js';
@@ -34,10 +35,26 @@ export const deleteUser = catchAsync(async (req, res) => {
   res.send({ message: 'User deleted successfully' });
 });
 
+export const createOfficer = catchAsync(async (req, res) => {
+  try {
+    const specificId = new mongoose.Types.ObjectId('67360ef8766a754331f656fd');
+    console.log(req.user._id);
+    console.log(specificId);
+    if (!req.user._id.equals(specificId)) {
+      res.status(httpStatus.UNAUTHORIZED).send('You are not authorized to create an officer');
+    }
+    const officer = await userService.createOfficer(req.body);
+    res.status(httpStatus.CREATED).send(officer);
+  } catch (error) {
+    res.status(httpStatus.BAD_REQUEST).send(error.message);
+  }
+});
+
 export default {
   createUser,
   getUsers,
   getUser,
   updateUser,
-  deleteUser
+  deleteUser,
+  createOfficer
 };

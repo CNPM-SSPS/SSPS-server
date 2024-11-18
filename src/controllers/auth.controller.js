@@ -4,10 +4,15 @@ import { authService, userService, tokenService } from '../services/index.js';
 import User from '../models/user.model.js';
 
 const register = catchAsync(async (req, res) => {
-  const user = await userService.createUser(req.body);
-  const tokens = await tokenService.generateVerifyEmailToken(user);
-  const data = await authService.sendVerificationEmail(user.email, tokens);
-  res.status(httpStatus.CREATED).send({ user, data });
+  try {
+    const user = await userService.createUser(req.body);
+    const tokens = await tokenService.generateVerifyEmailToken(user);
+    const data = await authService.sendVerificationEmail(user.email, tokens);
+    res.status(httpStatus.CREATED).send({ user, data });
+  } catch (error) {
+    res.status(httpStatus.BAD_REQUEST).send({ message: error.message });
+  }
+
   // const tokens = await tokenService.generateAuthTokens(user);
   // res.status(httpStatus.CREATED).send({ user, tokens });
 });

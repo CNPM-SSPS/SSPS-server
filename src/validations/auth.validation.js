@@ -5,7 +5,9 @@ export const register = {
   body: Joi.object().keys({
     name: Joi.string().required(),
     email: Joi.string().required().email(),
-    password: password.required()
+    password: password.required(),
+    studentID: Joi.string().required(),
+    department: Joi.string().required()
   })
 };
 

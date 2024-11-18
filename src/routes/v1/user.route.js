@@ -17,12 +17,18 @@ router
   .patch(auth('manageUsers'), validate(userValidation.updateUser), userController.updateUser)
   .delete(auth('manageUsers'), validate(userValidation.deleteUser), userController.deleteUser);
 
+router.post(
+  '/createOfficer',
+  auth('manageUsers'),
+  validate(userValidation.createOfficer),
+  userController.createOfficer
+);
 export default router;
 
 /**
  * @swagger
  * tags:
- *   name: Users
+ *   name: Admin
  *   description: User management and retrieval
  */
 
@@ -32,7 +38,7 @@ export default router;
  *   post:
  *     summary: Create a user
  *     description: Only admins can create other users.
- *     tags: [Users]
+ *     tags: [Admin]
  *     security:
  *       - bearerAuth: []
  *     requestBody:
@@ -60,12 +66,18 @@ export default router;
  *                 description: At least one number and one letter
  *               role:
  *                  type: string
- *                  enum: [user, admin]
+ *                  enum: [user]
+ *               studentID:
+ *                  type: string
+ *               department:
+ *                  type: string
  *             example:
  *               name: fake name
  *               email: fake@example.com
  *               password: password1
  *               role: user
+ *               studentID: "123456"
+ *               department: "Computer Science"
  *     responses:
  *       'XXX':
  *         content:
@@ -85,7 +97,7 @@ export default router;
  *   get:
  *     summary: Get all users
  *     description: Only admins can retrieve all users.
- *     tags: [Users]
+ *     tags: [Admin]
  *     security:
  *       - bearerAuth: []
  *     parameters:
@@ -141,7 +153,7 @@ export default router;
  *   get:
  *     summary: Get a user
  *     description: Logged in users can fetch only their own user information. Only admins can fetch other users.
- *     tags: [Users]
+ *     tags: [Admin]
  *     security:
  *       - bearerAuth: []
  *     parameters:
@@ -170,7 +182,7 @@ export default router;
  *   patch:
  *     summary: Update a user
  *     description: Logged in users can only update their own information. Only admins can update other users.
- *     tags: [Users]
+ *     tags: [Admin]
  *     security:
  *       - bearerAuth: []
  *     parameters:
@@ -221,7 +233,7 @@ export default router;
  *   delete:
  *     summary: Delete a user
  *     description: Logged in users can delete only themselves. Only admins can delete other users.
- *     tags: [Users]
+ *     tags: [Admin]
  *     security:
  *       - bearerAuth: []
  *     parameters:
@@ -246,4 +258,58 @@ export default router;
  *                   type: array
  *                   items:
  *                     type: object
+ */
+
+/**
+ * @swagger
+ * /v1/users/createOfficer:
+ *   post:
+ *     summary: Create an officer (Only certain people can create officers)
+ *     description: Only admins can create officers.
+ *     tags: [Admin]
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - name
+ *               - email
+ *               - password
+ *               - officerID
+ *               - campus
+ *               - CCCD
+ *             properties:
+ *               name:
+ *                 type: string
+ *               email:
+ *                 type: string
+ *                 format: email
+ *                 description: must be unique
+ *               password:
+ *                 type: string
+ *                 format: password
+ *                 minLength: 8
+ *                 description: At least one number and one letter
+ *               officerID:
+ *                  type: string
+ *               campus:
+ *                  type: string
+ *               CCCD:
+ *                 type: string
+ *             example:
+ *               name: Officer Name
+ *               email: officer@example.com
+ *               password: password1
+ *               officerID: "123456"
+ *               campus: "Main"
+ *               CCCD: "123456"
+ *     responses:
+ *       '201':
+ *         description: Officer created successfully
+ *         content:
+ *           application/json:
  */

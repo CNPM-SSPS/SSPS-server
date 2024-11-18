@@ -59,6 +59,8 @@ export default router;
  *               - name
  *               - email
  *               - password
+ *               - studentID
+ *               - department
  *             properties:
  *               name:
  *                 type: string
@@ -71,10 +73,16 @@ export default router;
  *                 format: password
  *                 minLength: 8
  *                 description: At least one number and one letter
+ *               studentID:
+ *                 type: string
+ *               department:
+ *                 type: string
  *             example:
  *               name: fake name
  *               email: fake@example.com
  *               password: password1
+ *               studentID: "123456"
+ *               department: CSE
  *     responses:
  *       'XXX':
  *         content:

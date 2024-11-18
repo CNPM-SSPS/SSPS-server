@@ -6,7 +6,9 @@ export const createUser = {
     email: Joi.string().required().email(),
     password: password.required(),
     name: Joi.string().required(),
-    role: Joi.string().required().valid('user', 'admin')
+    role: Joi.string().required().valid('user'),
+    studentID: Joi.string().required(),
+    department: Joi.string().required()
   })
 };
 
@@ -34,7 +36,9 @@ export const updateUser = {
     .keys({
       email: Joi.string().email(),
       password: password.required(),
-      name: Joi.string()
+      name: Joi.string(),
+      studentID: Joi.string(),
+      department: Joi.string()
     })
     .min(1)
 };
@@ -44,11 +48,22 @@ export const deleteUser = {
     userId: objectId.required()
   })
 };
+export const createOfficer = {
+  body: Joi.object().keys({
+    officerID: Joi.string().required(),
+    campus: Joi.string().required(),
+    CCCD: Joi.string().required(),
+    email: Joi.string().required().email(),
+    password: password.required(),
+    name: Joi.string().required()
+  })
+};
 
 export default {
   createUser,
   getUsers,
   getUser,
   updateUser,
-  deleteUser
+  deleteUser,
+  createOfficer
 };
