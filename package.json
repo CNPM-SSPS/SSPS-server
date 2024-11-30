@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "node --watch --env-file=.env src/index.js ",
+    "render-deploy": "node src/index.js",
     "lint": "eslint",
     "format": "prettier src test --write",
     "prepare": "husky"
@@ -28,6 +29,7 @@
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
     "moment": "^2.30.1",
+    "moment-timezone": "^0.5.46",
     "mongoose": "^8.7.1",
     "mongoose-delete": "^1.0.2",
     "multer": "^1.4.5-lts.1",
@@ -39,7 +41,9 @@
     "pdf-parse": "^1.1.1",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
+    "uuid": "^11.0.2",
     "validator": "^13.12.0",
+    "vnpay": "^1.6.0",
     "winston": "^3.15.0"
   },
   "devDependencies": {

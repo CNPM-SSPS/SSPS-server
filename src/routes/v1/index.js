@@ -3,6 +3,7 @@ import config from '../../config/config.js';
 import authRoute from './auth.route.js';
 import userRoute from './user.route.js';
 import docsRoute from './docs.route.js';
+import payRoute from './pay.route.js';
 import studentRouter from './student.route.js';
 import officerRouter from './officer.route.js';
 
@@ -16,6 +17,10 @@ const defaultRoutes = [
   {
     path: '/users',
     route: userRoute
+  },
+  {
+    path: '/pay',
+    route: payRoute
   }
 ];
 
