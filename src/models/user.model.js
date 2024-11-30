@@ -90,7 +90,7 @@ userSchema.plugin(mongooseDelete, {
   indexFields: ['deletedAt']
 });
 
-userSchema.methods.updateUser = async function (oldPassword , newPassword){
+userSchema.methods.updateUser = async function (oldPassword, newPassword) {
   const user = this;
   const isPasswordMatch = await bcrypt.compare(oldPassword, user.password);
   if (!isPasswordMatch) {
@@ -99,18 +99,17 @@ userSchema.methods.updateUser = async function (oldPassword , newPassword){
   user.password = newPassword;
   await user.save();
   return user;
-}
+};
 
-userSchema.methods.deleteUser = async function (password){
-  const user = this;  
+userSchema.methods.deleteUser = async function (password) {
+  const user = this;
   const isPasswordMatch = await bcrypt.compare(password, user.password);
   if (!isPasswordMatch) {
     throw new Error('Invalid password');
   }
   await user.delete();
   return user;
-}
-
+};
 
 /**
  * @typedef User
@@ -118,4 +117,3 @@ userSchema.methods.deleteUser = async function (password){
 const User = mongoose.model('User', userSchema);
 
 export default User;
-

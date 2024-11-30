@@ -6,6 +6,10 @@ const supportTicketSchema = mongoose.Schema({
     ref: 'User',
     required: true
   },
+  printinglog: {
+    type: mongoose.SchemaTypes.ObjectId,
+    ref: 'PrintingLog'
+  },
   printer: {
     type: mongoose.SchemaTypes.ObjectId,
     ref: 'Printer'

@@ -28,11 +28,23 @@ const printerSchema = mongoose.Schema({
   enabled: {
     type: Boolean,
     default: true
+  },
+  deleted: {
+    type: Boolean,
+    default: false
+  },
+  dateAdded: {
+    type: Date,
+    default: Date.now
+  },
+  lastModified: {
+    type: Date,
+    default: Date.now
   }
 });
 
 printerSchema.methods.getLocation = () => {
-   return `${this.room}, ${this.building}, ${this.campus}`;
+  return `${this.room}, ${this.building}, ${this.campus}`;
 };
 
 const Printer = mongoose.model('Printer', printerSchema);

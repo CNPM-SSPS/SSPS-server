@@ -1,5 +1,7 @@
 import httpStatus from 'http-status';
 import { User } from '../models/index.js';
+import Student from '../models/student.model.js';
+import Officer from '../models/officer.model.js';
 import ApiError from '../utils/ApiError.js';
 
 /**
@@ -11,7 +13,13 @@ const createUser = async (userBody) => {
   if (await User.isEmailTaken(userBody.email)) {
     throw new ApiError(httpStatus.BAD_REQUEST, 'Email already taken');
   }
-  return User.create(userBody);
+  // const user = await User.create(userBody);
+  try {
+    const user = await Student.create(userBody);
+    return user;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 /**
@@ -79,11 +87,29 @@ const deleteUserById = async (userId) => {
   return user;
 };
 
+const createOfficer = async (userBody) => {
+  if (await User.isEmailTaken(userBody.email)) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'Email already taken');
+  }
+  const user = await Officer.create({
+    officerID: userBody.officerID,
+    campus: userBody.campus,
+    CCCD: userBody.CCCD,
+    name: userBody.name,
+    email: userBody.email,
+    password: userBody.password,
+    isEmailVerified: true,
+    role: 'admin'
+  });
+  return user;
+};
+
 export default {
   createUser,
   queryUsers,
   getUserById,
   getUserByEmail,
   updateUserById,
-  deleteUserById
+  deleteUserById,
+  createOfficer
 };

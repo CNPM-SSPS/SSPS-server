@@ -4,7 +4,13 @@ import ApiError from '../utils/ApiError.js';
 import { roleRights } from '../config/roles.js';
 
 const verifyCallback = (req, resolve, reject, requiredRights) => async (err, user, info) => {
-  if (err || info || !user) {
+  if (err) {
+    return reject(new ApiError(httpStatus.UNAUTHORIZED, 'Authentication error'));
+  }
+  if (info) {
+    return reject(new ApiError(httpStatus.UNAUTHORIZED, info.message));
+  }
+  if (!user) {
     return reject(new ApiError(httpStatus.UNAUTHORIZED, 'Please authenticate'));
   }
   req.user = user;
