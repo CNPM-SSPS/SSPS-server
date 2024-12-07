@@ -2,6 +2,10 @@ import mongoose from 'mongoose';
 import { toJSON } from './plugins/index.js';
 import uploadFile from './uploadFile.model.js';
 
+/**
+ * @type {mongoose.SchemaDefinitionProperty}
+ */
+
 const PrintingLogSchema = mongoose.Schema({
   user: {
     type: mongoose.SchemaTypes.ObjectId,

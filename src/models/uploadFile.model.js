@@ -1,6 +1,9 @@
 import mongoose from 'mongoose';
 import path from 'path';
 
+/**
+ * @type {mongoose.SchemaDefinitionProperty}
+ */
 const uploadFileSchema = mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,

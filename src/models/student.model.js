@@ -4,6 +4,9 @@ import PrintingLog from './printingLog.model.js';
 import TransactionLog from './transactionLog.model.js';
 import User from './user.model.js';
 
+/**
+ * @type {mongoose.SchemaDefinitionProperty}
+ */
 const StudentSchema = new mongoose.Schema({
   studentID: {
     type: String,

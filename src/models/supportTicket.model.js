@@ -1,5 +1,9 @@
 import mongoose from 'mongoose';
 
+/**
+ * @type {mongoose.SchemaDefinitionProperty}
+ */
+
 const supportTicketSchema = mongoose.Schema({
   student: {
     type: mongoose.SchemaTypes.ObjectId,

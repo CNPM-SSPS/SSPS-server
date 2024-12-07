@@ -1,5 +1,9 @@
 import mongoose from 'mongoose';
 
+/**
+ * @type {mongoose.SchemaDefinitionProperty}
+ */
+
 const printerSchema = mongoose.Schema({
   room: {
     type: String,
