@@ -1,15 +1,9 @@
 import mongoose from 'mongoose';
-import path from 'path';
 
 /**
  * @type {mongoose.SchemaDefinitionProperty}
  */
 const uploadFileSchema = mongoose.Schema({
-  user: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
-    required: true
-  },
   fileName: {
     type: String,
     required: true
@@ -33,10 +27,6 @@ const uploadFileSchema = mongoose.Schema({
   dateUploaded: {
     type: Date,
     default: Date.now
-  },
-  path: {
-    type: String,
-    required: true
   }
 });
 
