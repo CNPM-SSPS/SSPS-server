@@ -47,7 +47,9 @@ export const verifyIPN = async (req, res) => {
 
 export const getPaymentHistory = async (req, res) => {
   try {
-    const history = await TransactionLog.find({ studentID: req.user.id }).sort({ createdAt: -1 });
+    const history = await TransactionLog.find({ studentID: req.user.id })
+      .populate('studentID')
+      .sort({ createdAt: -1 });
     res.json(history);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -56,7 +58,7 @@ export const getPaymentHistory = async (req, res) => {
 
 export const getPayments = async (req, res) => {
   try {
-    const history = await TransactionLog.find().sort({ createdAt: -1 });
+    const history = await TransactionLog.find().sort({ createdAt: -1 }).populate('studentID');
     res.json(history);
   } catch (error) {
     res.status(500).json({ message: error.message });

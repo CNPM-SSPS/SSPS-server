@@ -46,14 +46,11 @@ export const getSupportTicketsByStudent = async (req, res) => {
 };
 
 export const getSupportTicketsByOfficer = async (req, res) => {
-  const { status, printer, startTime, endTime } = req.query;
-  const start = new Date(startTime);
-  const end = new Date(endTime);
+  const { status, printer } = req.query;
   try {
     const supportTickets = await SupportTicket.find({
-      status,
-      printer,
-      createdAt: { $gte: start, $lte: end }
+      ...(status && { status }),
+      ...(printer && { printer })
     })
       .populate('student')
       .populate('printer')
