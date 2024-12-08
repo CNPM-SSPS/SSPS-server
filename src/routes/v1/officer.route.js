@@ -4,6 +4,7 @@ import * as supportTicketController from '../../controllers/supportTicket.contro
 import * as printerController from '../../controllers/printer.controller.js';
 import * as printingLogController from '../../controllers/printingLog.controller.js';
 import * as uploadFileController from '../../controllers/uploadFile.controller.js';
+import * as payController from '../../controllers/pay.controller.js';
 import auth from '../../middlewares/auth.js';
 
 const officerRouter = express.Router();
@@ -32,7 +33,8 @@ officerRouter.get('/uploadFile', auth('admins'), uploadFileController.getAllUpoa
 
 export default officerRouter;
 
-// Manage printers
+// Manage payments
+officerRouter.get('/payment', auth('admins'), payController.getPayments);
 
 /**
  * @swagger
