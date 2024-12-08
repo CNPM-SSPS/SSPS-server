@@ -1,11 +1,15 @@
 import mongoose from 'mongoose';
 import SupportTicket from '../models/supportTicket.model.js';
+import PrintingLog from '../models/printingLog.model.js';
 
 export const createSupportTicketByStudent = async (req, res) => {
   const { description, printinglog } = req.body;
   const student = req.user._id;
   try {
-    const newSupportTicket = await SupportTicket.create({ student, printinglog, description });
+    const newSupportTicket = await new SupportTicket({ student, printinglog, description }).save();
+    const printingLog = await PrintingLog.findByIdAndUpdate(printinglog, {
+      supportTicketID: newSupportTicket._id
+    });
     res.status(201).json(newSupportTicket);
   } catch (error) {
     res.status(400).json({ message: error.message });
