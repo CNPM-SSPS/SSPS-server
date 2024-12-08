@@ -35,15 +35,14 @@ export const createPrinter = async (req, res) => {
 export const updatePrinter = async (req, res) => {
   const { id: _id } = req.params;
   const printer = {};
-  const { room, building, campus, description, model, brand, status } = req.body;
+  const { room, building, campus, description, model, brand, enabled } = req.body;
   if (room) printer.room = room;
   if (building) printer.building = building;
   if (campus) printer.campus = campus;
   if (description) printer.description = description;
   if (model) printer.model = model;
   if (brand) printer.brand = brand;
-  if (status === 'enabled') printer.enabled = true;
-  else if (status === 'disabled') printer.enabled = false;
+  printer.enabled = enabled;
   if (Object.keys(printer).length === 0)
     return res.status(400).send('No data to update, please provide data');
   if (!mongoose.Types.ObjectId.isValid(_id)) return res.status(404).send('No printer with that id');
