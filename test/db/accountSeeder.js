@@ -18,7 +18,7 @@ const seedStudent = (studentID) => {
     }),
     password: Faker.internet.password({ length: 8 }) + Faker.number.int(),
     role: 'user',
-    isEmailVerified: false,
+    isEmailVerified: true,
     studentID: studentID,
     department: Faker.helpers.arrayElement(['SE', 'CS', 'EE']),
     pageCount: Faker.number.int({ min: 0, max: 50 })
@@ -40,7 +40,7 @@ const seedOfficer = () => {
     }),
     password: Faker.internet.password({ length: 8 }) + Faker.number.int(),
     role: 'admin',
-    isEmailVerified: false,
+    isEmailVerified: true,
     officerID: Faker.string.uuid(),
     campus: Faker.helpers.arrayElement('CS2', 'CS1'),
     CCCD: Faker.string.uuid()
