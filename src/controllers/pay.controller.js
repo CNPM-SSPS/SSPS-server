@@ -3,7 +3,7 @@ import httpStatus from 'http-status';
 import { v4 as uuidv4 } from 'uuid';
 import TransactionLog from '../models/transactionLog.model.js';
 
-const A4PRICE = 250; // 250 VND per A4 paper
+const A4PRICE = 500; // 500 VND per A4 paper
 
 export const purchasePaper = async (req, res, next) => {
   const amount = req.query.amount || 0;

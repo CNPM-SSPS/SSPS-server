@@ -31,7 +31,7 @@ studentRouter.get('/printing/print', printerController.getPrinters); //done
 studentRouter.get('/printinglog', auth(), printingLogController.getPrintingLogsByStudent); //done
 studentRouter.get('/printinglog/:id', auth(), printingLogController.viewPrintingLog); //done
 // transaction log
-studentRouter.get('/payment', payController.getPaymentHistory);
+studentRouter.get('/payment', auth(), payController.getPaymentHistory);
 
 export default studentRouter;
 

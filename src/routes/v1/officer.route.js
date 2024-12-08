@@ -1,5 +1,4 @@
 import express from 'express';
-import * as officerController from '../../controllers/officer.controller.js';
 import * as supportTicketController from '../../controllers/supportTicket.controller.js';
 import * as printerController from '../../controllers/printer.controller.js';
 import * as printingLogController from '../../controllers/printingLog.controller.js';
