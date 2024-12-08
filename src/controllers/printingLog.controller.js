@@ -22,7 +22,8 @@ export const getPrintingLogsByStudent = async (req, res) => {
     const logs = await PrintingLog.find(query)
       .populate('printingFile')
       .populate('user')
-      .populate('printer');
+      .populate('printer')
+      .populate('supportTicketID');
     res.json(logs);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -73,7 +74,10 @@ export const getPrintingLogByOfficer = async (req, res) => {
   }
 
   try {
-    const logs = await PrintingLog.find(query).populate('user').populate('printer');
+    const logs = await PrintingLog.find(query)
+      .populate('user')
+      .populate('printer')
+      .populate('supportTicketID');
     res.json(logs);
   } catch (error) {
     res.status(500).json({ message: error.message });
