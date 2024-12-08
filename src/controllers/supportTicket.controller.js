@@ -1,11 +1,15 @@
 import mongoose from 'mongoose';
 import SupportTicket from '../models/supportTicket.model.js';
+import PrintingLog from '../models/printingLog.model.js';
 
 export const createSupportTicketByStudent = async (req, res) => {
   const { description, printinglog } = req.body;
   const student = req.user._id;
   try {
-    const newSupportTicket = await SupportTicket.create({ student, printinglog, description });
+    const newSupportTicket = await new SupportTicket({ student, printinglog, description }).save();
+    const printingLog = await PrintingLog.findByIdAndUpdate(printinglog, {
+      supportTicketID: newSupportTicket._id
+    });
     res.status(201).json(newSupportTicket);
   } catch (error) {
     res.status(400).json({ message: error.message });
@@ -42,14 +46,11 @@ export const getSupportTicketsByStudent = async (req, res) => {
 };
 
 export const getSupportTicketsByOfficer = async (req, res) => {
-  const { status, printer, startTime, endTime } = req.query;
-  const start = new Date(startTime);
-  const end = new Date(endTime);
+  const { status, printer } = req.query;
   try {
     const supportTickets = await SupportTicket.find({
-      status,
-      printer,
-      createdAt: { $gte: start, $lte: end }
+      ...(status && { status }),
+      ...(printer && { printer })
     })
       .populate('student')
       .populate('printer')

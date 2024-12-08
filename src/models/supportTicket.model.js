@@ -1,14 +1,14 @@
 import mongoose from 'mongoose';
 
+/**
+ * @type {mongoose.SchemaDefinitionProperty}
+ */
+
 const supportTicketSchema = mongoose.Schema({
   student: {
     type: mongoose.SchemaTypes.ObjectId,
     ref: 'User',
     required: true
-  },
-  printinglog: {
-    type: mongoose.SchemaTypes.ObjectId,
-    ref: 'PrintingLog'
   },
   printer: {
     type: mongoose.SchemaTypes.ObjectId,

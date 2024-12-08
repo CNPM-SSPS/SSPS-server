@@ -1,8 +1,9 @@
 import { vnpayService } from '../services/index.js';
 import httpStatus from 'http-status';
 import { v4 as uuidv4 } from 'uuid';
+import TransactionLog from '../models/transactionLog.model.js';
 
-const A4PRICE = 250; // 250 VND per A4 paper
+const A4PRICE = 500; // 500 VND per A4 paper
 
 export const purchasePaper = async (req, res, next) => {
   const amount = req.query.amount || 0;
@@ -42,4 +43,24 @@ export const verifyIPN = async (req, res) => {
   const resJSON = await vnpayService.verifyIPN(ipnReturn);
   if (resJSON.RspCode == 0) return res.status(httpStatus.OK).json(resJSON);
   res.json(resJSON);
+};
+
+export const getPaymentHistory = async (req, res) => {
+  try {
+    const history = await TransactionLog.find({ studentID: req.user.id })
+      .populate('studentID')
+      .sort({ createdAt: -1 });
+    res.json(history);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+export const getPayments = async (req, res) => {
+  try {
+    const history = await TransactionLog.find().sort({ createdAt: -1 }).populate('studentID');
+    res.json(history);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
 };

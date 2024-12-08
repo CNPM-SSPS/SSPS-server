@@ -4,6 +4,9 @@ import PrintingLog from './printingLog.model.js';
 import SupportTicket from './supportTicket.model.js';
 import User from './user.model.js';
 
+/**
+ * @type {mongoose.SchemaDefinitionProperty}
+ */
 const officerSchema = new mongoose.Schema({
   officerID: {
     type: String,
@@ -20,6 +23,9 @@ const officerSchema = new mongoose.Schema({
   }
 });
 
+/**
+ * @type {mongoose.Model<mongoose.Document>}
+ */
 const Officer = User.discriminator('Officer', officerSchema);
 
 export default Officer;

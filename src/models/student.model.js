@@ -1,9 +1,10 @@
 import mongoose from 'mongoose';
 import { toJSON } from './plugins/index.js';
-import PrintingLog from './printingLog.model.js';
-import TransactionLog from './transactionLog.model.js';
 import User from './user.model.js';
 
+/**
+ * @type {mongoose.SchemaDefinitionProperty}
+ */
 const StudentSchema = new mongoose.Schema({
   studentID: {
     type: String,
@@ -14,22 +15,17 @@ const StudentSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  paper: [
-    {
-      pageCount: {
-        type: Number,
-        required: true
-      },
-      pageType: {
-        type: String,
-        required: true
-      }
-    }
-  ]
+  pageCount: {
+    type: Number,
+    required: true
+  }
 });
 
 StudentSchema.plugin(toJSON);
 
+/**
+ * @type {mongoose.Model<mongoose.Document>}
+ */
 const Student = User.discriminator('Student', StudentSchema);
 
 export default Student;

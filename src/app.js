@@ -1,7 +1,6 @@
 import express from 'express';
 import passport from 'passport';
 import cors from 'cors';
-import config from './config/config.js';
 import jwtStrategy from './config/passport.js';
 import routes from './routes/v1/index.js';
 import globalErrorHandler from './middlewares/globalErrorHandler.js';
@@ -27,5 +26,3 @@ app.use('/v1', routes);
 
 // error handler middleware
 app.use(globalErrorHandler);
-
-console.log(config);

@@ -1,6 +1,9 @@
 import mongoose from 'mongoose';
 import { toJSON } from './plugins/index.js';
-import uploadFile from './uploadFile.model.js';
+
+/**
+ * @type {mongoose.SchemaDefinitionProperty}
+ */
 
 const PrintingLogSchema = mongoose.Schema({
   user: {
@@ -17,13 +20,15 @@ const PrintingLogSchema = mongoose.Schema({
     type: Date,
     default: Date.now
   },
+  // array
   printingFile: {
-    type: mongoose.SchemaTypes.ObjectId,
+    type: [mongoose.SchemaTypes.ObjectId],
     ref: 'uploadFile',
     required: true
   },
   status: {
     type: String,
+    enum: ['success', 'failure'],
     default: 'success'
   },
   color: {
@@ -31,10 +36,13 @@ const PrintingLogSchema = mongoose.Schema({
     default: false,
     required: true
   },
+  //
   printType: {
     type: String,
+    enum: ['single-sided', 'double-sided'],
     required: true
   },
+  // total pages of files
   printCount: {
     type: Number,
     required: true

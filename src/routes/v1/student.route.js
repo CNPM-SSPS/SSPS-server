@@ -5,6 +5,7 @@ import * as printerController from '../../controllers/printer.controller.js';
 import * as printingLogController from '../../controllers/printingLog.controller.js';
 import * as supportTicketController from '../../controllers/supportTicket.controller.js';
 import * as uploadFileController from '../../controllers/uploadFile.controller.js';
+import * as payController from '../../controllers/pay.controller.js';
 
 const studentRouter = express.Router();
 
@@ -29,6 +30,8 @@ studentRouter.get('/printing/print', printerController.getPrinters); //done
 // Printing Log
 studentRouter.get('/printinglog', auth(), printingLogController.getPrintingLogsByStudent); //done
 studentRouter.get('/printinglog/:id', auth(), printingLogController.viewPrintingLog); //done
+// transaction log
+studentRouter.get('/payment', auth(), payController.getPaymentHistory);
 
 export default studentRouter;
 
@@ -89,7 +92,7 @@ export default studentRouter;
  *               type: object
  *               properties:
  *                 user:
- *                   $ref: '#/components/schemas/User'
+ *
  */
 
 /**
@@ -124,7 +127,7 @@ export default studentRouter;
  *               type: object
  *               properties:
  *                 user:
- *                   $ref: '#/components/schemas/User'
+ *
  */
 
 /**
@@ -165,7 +168,7 @@ export default studentRouter;
  *             schema:
  *               type: array
  *               items:
- *                 $ref: '#/components/schemas/SupportTicket'
+ *
  */
 
 /**
@@ -199,7 +202,7 @@ export default studentRouter;
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/SupportTicket'
+ *
  */
 
 //Upload file

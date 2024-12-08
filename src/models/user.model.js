@@ -5,6 +5,9 @@ import bcrypt from 'bcryptjs';
 import { toJSON, paginate } from './plugins/index.js';
 import { roles } from '../config/roles.js';
 
+/**
+ * @type {mongoose.SchemaDefinitionProperty}
+ */
 const userSchema = mongoose.Schema(
   {
     name: {

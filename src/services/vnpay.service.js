@@ -13,6 +13,7 @@ import vnpayConfig from '../config/vnpay.js';
 import config from '../config/config.js';
 import { TransactionLog } from '../models/index.js';
 import moment from 'moment-timezone';
+import Student from '../models/student.model.js';
 
 const paymentExpireDate = () => {
   const PAYMENT_EXPIRE_TIME = 30 * 60 * 1000; // 30 minutes
@@ -28,7 +29,7 @@ export const createPaymentURL = async (amount, orderInfo, transID, ipAddr = '127
     vnp_TxnRef: transID,
     vnp_OrderInfo: orderInfo,
     vnp_OrderType: ProductCode.Pay,
-    vnp_ReturnUrl: `http://${config.hostName}:${config.port}/v1/pay/redirect-return`,
+    vnp_ReturnUrl: 'http://localhost:5173/thanh-toan',
     vnp_Locale: VnpLocale.VN,
     vnp_ExpireDate: paymentExpireDate()
   });
@@ -66,6 +67,10 @@ export const verifyIPN = async (ipn) => {
     // update the order status
     order.completed = true;
     await order.save();
+
+    const student = await Student.findById(order.studentID);
+    student.pageCount += order.pageCount;
+    await student.save();
 
     return IpnSuccess;
   } catch (err) {

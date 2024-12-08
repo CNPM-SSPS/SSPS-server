@@ -1,0 +1,1002 @@
+[
+  {
+    "name": "Thúy My Trịnh",
+    "email": "ThuyMy/Trinh819ba765-3a45-4089-9bbc-b7a3e2c9a67691@hcmut.edu.vn",
+    "password": "DqXD0JQl3922932872383671",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "b180aa82-7461-4cf1-b0e2-698b80b79217",
+    "campus": "C",
+    "CCCD": "579f466f-ffbc-4a02-81d0-120b85828071"
+  },
+  {
+    "name": "Hồng Thịnh Bùi",
+    "email": "HongThinh_Buiba6d96dc?32bc-408c-95ef-b3d04fb4f6df@hcmut.edu.vn",
+    "password": "BA7XIprO7123515209477227",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "8db7c1e2-19d9-4c87-996a-c46ece14832a",
+    "campus": "2",
+    "CCCD": "c7c303d3-0b54-4134-86ad-8cb4d880cefd"
+  },
+  {
+    "name": "Quý Vĩnh Đinh",
+    "email": "QuyVinh&7kinh0273ab5e-c264-4960-b139-010d4bb270dc6@hcmut.edu.vn",
+    "password": "epCwGG6D2378898839114802",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "52733f52-a556-480a-acf9-220dbcf7d5c7",
+    "campus": "C",
+    "CCCD": "3ea561bd-6a21-4250-a581-a94a1ef5144e"
+  },
+  {
+    "name": "Ngọc Lệ Lê",
+    "email": "NgocLe+Le83c74f2e-88cb-4c3c-8da2-d2c15ffafc1e@hcmut.edu.vn",
+    "password": "wHr2mdWx6694222307975524",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "db2ccea0-3be6-4888-8b01-e88dbfcfbab8",
+    "campus": "S",
+    "CCCD": "7418b28e-cde6-4492-aa8c-24f442169c2d"
+  },
+  {
+    "name": "Thiên Phú Mai",
+    "email": "ThienPhu_Maia393ba97-720b-4d5c-a13b-d70877d7ecbd59@hcmut.edu.vn",
+    "password": "lJKL_Hxb3660708138221342",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "38a5dfda-bb8d-4b9d-95dc-f4072fcb2f51",
+    "campus": "2",
+    "CCCD": "8eafc25e-9e0c-458d-bfb3-aa66cabdc773"
+  },
+  {
+    "name": "Thanh Thư Dương",
+    "email": "ThanhThu_Duong16e99b88}4c66-476f-9ddc-f34d9775305e@hcmut.edu.vn",
+    "password": "yw11EFZx6718978831432096",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "2b8a32a2-e907-4244-9584-d24aa300ee22",
+    "campus": "C",
+    "CCCD": "69f4cb6b-104c-4689-9565-9b2ffe487010"
+  },
+  {
+    "name": "Việt Khang Mai",
+    "email": "VietKhang_Mai86ef33db-9d18-43f0-8653-d88617beb38d3@hcmut.edu.vn",
+    "password": "T3XYFvpx7879280101630417",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "0e07b378-403d-4372-9624-4e0db97618b1",
+    "campus": "2",
+    "CCCD": "e7b1edce-0fe5-46df-8f1c-3d2e16c842d8"
+  },
+  {
+    "name": "Công Hào Đoàn",
+    "email": "CongHao/7koan4de66995-f76c-4f15-a185-05774792465f4@hcmut.edu.vn",
+    "password": "KpZCQQxH178161849415894",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "dff56a70-3682-42d9-9f1a-be7a28fa449f",
+    "campus": "2",
+    "CCCD": "8feeea1f-de81-4163-8722-8739fc086456"
+  },
+  {
+    "name": "Gia Kiệt Phùng",
+    "email": "GiaKiet.Phung0ac5656f-a83f-4776-95fb-e942320373ed@hcmut.edu.vn",
+    "password": "KzcbVuTO7732560117723636",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "b100cd96-d9c5-4400-816f-f766201ec026",
+    "campus": "2",
+    "CCCD": "21a151bc-3dcb-4513-b215-4c2ee413427d"
+  },
+  {
+    "name": "Xuân Hiếu Đinh",
+    "email": "XuanHieu_7kinh76e6239a!a6dc-4dd0-8b8b-aa6f20a499fc@hcmut.edu.vn",
+    "password": "f2cHIN9I2948475234752063",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "040dc858-eb98-4bfd-9a9b-f15b6a7bad56",
+    "campus": "S",
+    "CCCD": "07d89d54-576d-4f32-b7d2-b63d58c89541"
+  },
+  {
+    "name": "Nhã Yến Tô",
+    "email": "NhaYen'To1099f99d-d0af-43fd-b5f0-4cc13d0befd8@hcmut.edu.vn",
+    "password": "6fvU_nJA3866454891614650",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "2c54cd74-be44-443d-8ee0-a07443301a82",
+    "campus": "C",
+    "CCCD": "44ab188c-1387-430d-bc62-4856850be858"
+  },
+  {
+    "name": "Xuân Thu Đỗ",
+    "email": "XuanThu.7koc9b7cbf3-47be-4299-88aa-e5bca62a071098@hcmut.edu.vn",
+    "password": "5nHSGj388889694383505505",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "7d91ab4f-78ac-45eb-8a4b-307c11a04b90",
+    "campus": "2",
+    "CCCD": "9d88064e-58b0-41a6-85d3-dc6b9b00ffcf"
+  },
+  {
+    "name": "Quỳnh Giang Phùng",
+    "email": "QuynhGiang_Phung542b1a57}e945-42e5-b996-44705b3dda@hcmut.edu.vn",
+    "password": "bnmzClvK5852344558855013",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "8702783e-adcd-46d2-8fa6-c259d1ab0ebf",
+    "campus": "2",
+    "CCCD": "eca5fc6b-a840-4469-879b-789ccbc5db69"
+  },
+  {
+    "name": "Đức Sinh Mai",
+    "email": "7kucSinh_Mai8a6fb9c5-2396-4796-9aa3-c9e8ad83be12@hcmut.edu.vn",
+    "password": "kuj3Lke67915836103174561",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "2c1bac3d-6e3c-4e51-9cbb-c02628f3d536",
+    "campus": "2",
+    "CCCD": "68c45531-553a-4dbf-88c7-b7b9f9fff06b"
+  },
+  {
+    "name": "Kim Phú Lê",
+    "email": "KimPhu`Lebec18c89-5eed-455f-a6cc-e9106e268600@hcmut.edu.vn",
+    "password": "KbwkNsGl6498902976077480",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "0b3097a9-55f3-40d1-836f-3c91692a9b8c",
+    "campus": "2",
+    "CCCD": "8cfe669b-bfe6-4887-868e-87a4b9ab73a5"
+  },
+  {
+    "name": "Tuấn Việt Nguyễn",
+    "email": "TuanViet'Nguyen563cb5f5-a3a9-4e91-a616-dae3f80ee96@hcmut.edu.vn",
+    "password": "cd0_w2dp5757552601207199",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "205a81f5-e36f-4c3e-92be-df969e2a0c9e",
+    "campus": "C",
+    "CCCD": "0391db01-aab1-4170-900f-dab511e9268a"
+  },
+  {
+    "name": "Đan Quế Trịnh",
+    "email": "7kanQue_Trinhd5785c4e{48cc-4b75-84d9-bfcca116c7f51@hcmut.edu.vn",
+    "password": "rd7Hdid885892211910824",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "94b4e6fc-b38f-422c-b084-335c4016c0d9",
+    "campus": "S",
+    "CCCD": "8aac79b0-51cc-4294-8248-5873d476663a"
+  },
+  {
+    "name": "Phương Thảo Nguyễn",
+    "email": "PhuongThao.Nguyen27061e51-81f5-44b2-b6ed-3c6d36017@hcmut.edu.vn",
+    "password": "VAQqAPeW2014951633367905",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "b949774f-10ba-48ad-b903-89c21260d22f",
+    "campus": "2",
+    "CCCD": "94a396f1-213d-46b3-8bf6-f552663c0ed2"
+  },
+  {
+    "name": "Đan Thư Phạm",
+    "email": "7kanThu?Phamb9c1a6f8-9179-4242-b80d-526efcf85cc2@hcmut.edu.vn",
+    "password": "N0M_8NEJ2347565969237331",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "9855f92f-7015-4801-b28a-418fef2df8aa",
+    "campus": "S",
+    "CCCD": "bee0c9fe-f1d1-4d95-8973-9e95d953642b"
+  },
+  {
+    "name": "Trúc Loan Mai",
+    "email": "TrucLoan_Mai4177392c-3d9c-4e01-8d1d-1a585518ad60@hcmut.edu.vn",
+    "password": "ttbFCuoJ8896523972591456",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "f1080ebe-d74b-4474-96aa-4338ca683902",
+    "campus": "2",
+    "CCCD": "fa370a50-3882-486c-b7eb-5f9065d90fdd"
+  },
+  {
+    "name": "Bảo Quyên Hoàng",
+    "email": "BaoQuyen.Hoangeb3a5168^34fe-4d76-a060-7599a9e55032@hcmut.edu.vn",
+    "password": "sZHIfwJj3495267685903307",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "9010c22c-eeeb-447b-b29c-427fa1a677e1",
+    "campus": "2",
+    "CCCD": "36b2731f-5985-4de9-b5ee-faee6f4917e5"
+  },
+  {
+    "name": "Ái Hồng Dương",
+    "email": "AiHong_Duongd569ffdb-a556-4e34-8c87-f97a9a2e39f1@hcmut.edu.vn",
+    "password": "2lcMsM7t1172161641985494",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "23adb7f0-9fc0-443b-8c91-0c08a9e5dbe9",
+    "campus": "C",
+    "CCCD": "44bb97ee-f39b-4092-8d4a-75d55e2d63ab"
+  },
+  {
+    "name": "Kim Hoàng Vũ",
+    "email": "KimHoang_Vuf8e9b5fc-790c-496c-866a-0dff5d2dccdd@hcmut.edu.vn",
+    "password": "AQ8LH1qR8872292040602435",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "1e5e7bfc-0218-4979-8368-014cf35cfa4e",
+    "campus": "2",
+    "CCCD": "842f3591-0405-4880-ae38-d9cf6eca3758"
+  },
+  {
+    "name": "Việt Mi Đinh",
+    "email": "VietMi.7kinh71b4623a-39c7-42a5-80ab-efa057fb6b06@hcmut.edu.vn",
+    "password": "MeHlH6iG4369672247996349",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "0ac249a3-50ad-4d2a-b426-be0fa348af4e",
+    "campus": "S",
+    "CCCD": "054b474d-b55f-4e37-8736-56a452fb6c3f"
+  },
+  {
+    "name": "Thuận Thành Phùng",
+    "email": "ThuanThanh|Phung5b094e95-aed2-416d-bd2b-4edb0a8f7b@hcmut.edu.vn",
+    "password": "HA1PiAYe4608477204680637",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "7f1b04a3-c3d4-4c95-9013-5e94243b5f62",
+    "campus": "S",
+    "CCCD": "2ababe86-1773-419b-bcee-5cd17209cea7"
+  },
+  {
+    "name": "Thiên Nương Trần",
+    "email": "ThienNuong_Tran98190f76-4ca6-489d-808a-28044f861f1@hcmut.edu.vn",
+    "password": "XwIdYFLJ4364769090423434",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "9a0a17c1-410f-44c5-b56d-3c7f37a0b48d",
+    "campus": "2",
+    "CCCD": "bf410984-99bb-4902-89cf-90212f3e83cd"
+  },
+  {
+    "name": "Lập Thành Phan",
+    "email": "LapThanh.Phan9dac21a6-1342-45b0-8650-6cea6f6a77bd4@hcmut.edu.vn",
+    "password": "gU9l5kpv7318905478766154",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "68e62d64-d782-4ff4-8e82-3ec669a15520",
+    "campus": "C",
+    "CCCD": "fc41d3c1-72ef-4fce-b6ad-fb774e3aa518"
+  },
+  {
+    "name": "Khánh Giao Phan",
+    "email": "KhanhGiao.Phan66ae56e0!c121-48bc-9a95-e6347453e516@hcmut.edu.vn",
+    "password": "hrPlvuw38436549925721580",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "7612ef93-c227-499d-b781-8d4447703418",
+    "campus": "S",
+    "CCCD": "be3359ea-a2c4-438e-9635-265d4a805780"
+  },
+  {
+    "name": "Ái Khanh Phùng",
+    "email": "AiKhanh.Phunge32e1e4f-2a67-47ea-b6eb-1845e959f0ec@hcmut.edu.vn",
+    "password": "s8OyIc0d6208276835783377",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "953475bd-e9cb-4359-8ed2-4bfe9a63baf6",
+    "campus": "C",
+    "CCCD": "31e857d8-aed7-4acb-8239-071ef041a239"
+  },
+  {
+    "name": "Kỳ Duyên Phan",
+    "email": "KyDuyen|Phana192cdb9-4c46-4da0-a64e-e193c440900e71@hcmut.edu.vn",
+    "password": "vZOhFF4R5663503654517153",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "0eb335db-f443-402f-87ea-057082e7f52e",
+    "campus": "S",
+    "CCCD": "ab525dae-b66c-43dc-84d1-7ed0bb05acad"
+  },
+  {
+    "name": "Hiền Chung Trịnh",
+    "email": "HienChung_Trinh7bc3cb33{f580-43e2-81c3-cfedccb0dd6@hcmut.edu.vn",
+    "password": "4Eng4dSK1130580667363759",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "6186eb00-fba9-4007-9e39-84425859e9a0",
+    "campus": "C",
+    "CCCD": "68166b9d-3b5c-4ea3-865f-fb882825598c"
+  },
+  {
+    "name": "Đức Phi Bùi",
+    "email": "7kucPhi_Bui055aee61?a6c4-4ca3-aa27-25bc4e45424499@hcmut.edu.vn",
+    "password": "5ZPTPeLz6627043274685114",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "8d96da36-6b56-4912-8a9b-65d5280bfe64",
+    "campus": "S",
+    "CCCD": "b992a620-1f1d-42d9-a3ff-bd3535650cc5"
+  },
+  {
+    "name": "Mạnh Thiện Trương",
+    "email": "ManhThien}Truongdaa7447c-6af7-44df-a2c0-a512524583@hcmut.edu.vn",
+    "password": "TquQCUYD1159407013059035",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "1a97375e-d9e3-4d0e-8191-f944494066ba",
+    "campus": "C",
+    "CCCD": "d1b88a3e-10de-4909-adb5-16770c5aa07f"
+  },
+  {
+    "name": "Diễm Liên Vũ",
+    "email": "DiemLien_Vu7e813676*a6dd-4971-899a-bf37ae28896d@hcmut.edu.vn",
+    "password": "xZhZMNbp8679102657015981",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "ff788ac1-8426-41ca-b668-f0d8f61c9b87",
+    "campus": "2",
+    "CCCD": "9f084edf-2ab6-446e-a454-f94e7c77745b"
+  },
+  {
+    "name": "Quang Khải Dương",
+    "email": "QuangKhai_Duongee54e919-a57c-47ac-b429-b9c864daef9@hcmut.edu.vn",
+    "password": "vManLWI58490317380486089",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "998eec50-630f-4259-92e9-229066c291c2",
+    "campus": "C",
+    "CCCD": "4638cb9d-d6af-47a9-b805-54e410973200"
+  },
+  {
+    "name": "Thương Huyền Đỗ",
+    "email": "ThuongHuyen=7ko02ac4269-9a1a-4c38-b028-4112adc0a88@hcmut.edu.vn",
+    "password": "qPOtqPCQ4388298025757114",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "3d5a525e-b5a5-4422-a03f-d7c831519b70",
+    "campus": "S",
+    "CCCD": "f3817a65-64bf-4e4e-a3f1-2729749c9cd9"
+  },
+  {
+    "name": "Bạch Vân Trịnh",
+    "email": "BachVan.Trinh3c0e75e8-f39c-4f27-b459-5091455b53e5@hcmut.edu.vn",
+    "password": "lCRKoF3A6329594137423108",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "5e32725d-a762-4790-acb0-946f0038c565",
+    "campus": "S",
+    "CCCD": "e61010f2-ff70-4a79-a373-d1cdd8766ec3"
+  },
+  {
+    "name": "Duyên My Lâm",
+    "email": "DuyenMy.Lam201c210d}8ef3-42ae-ba18-3da608d89b88@hcmut.edu.vn",
+    "password": "xZvsNI4Y1434726809950974",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "38dd69e7-4003-4bb3-8e4e-312444e06efe",
+    "campus": "S",
+    "CCCD": "76c087b3-b46c-46d8-94c0-0788cedf5385"
+  },
+  {
+    "name": "Bá Cường Đỗ",
+    "email": "BaCuong.7kob41332a3}bed5-4d3a-beb6-3217db5b9df9@hcmut.edu.vn",
+    "password": "V9Jg3Fvs5872874211213918",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "ee3b4c5a-f943-43d4-9405-4d10ed6a4398",
+    "campus": "2",
+    "CCCD": "4f1f1762-d012-4f4e-b1db-e7c64aedfb22"
+  },
+  {
+    "name": "Thạch Tùng Hà",
+    "email": "ThachTung_Hac1771eb1~ebdd-410a-9a56-4fa5641bc538@hcmut.edu.vn",
+    "password": "3_MrzteJ1062677513570374",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "ee378ea9-d728-485c-9b30-b4b66e952193",
+    "campus": "S",
+    "CCCD": "8ca14a68-ccbb-4d40-853d-f48ab82dc29e"
+  },
+  {
+    "name": "Hiền Hòa Phùng",
+    "email": "HienHoa.Phung741b9480-5c75-4873-8980-672885dffbbc@hcmut.edu.vn",
+    "password": "2AmSzsP33672403526183125",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "0b73c735-b983-4508-bb62-342e0dd2f094",
+    "campus": "2",
+    "CCCD": "f135d7ea-14a0-4c03-b18a-eea247b63730"
+  },
+  {
+    "name": "Anh Vũ Vương",
+    "email": "AnhVu+Vuong29dfc139-2782-4ea2-adcc-3a24a18472f636@hcmut.edu.vn",
+    "password": "bheT166j856431092339497",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "a93ca794-2e65-4a44-8603-849d5555feb8",
+    "campus": "S",
+    "CCCD": "5767e00c-8aa6-4686-8e8d-dcdbcceeb385"
+  },
+  {
+    "name": "Cường Dũng Phạm",
+    "email": "CuongDung_Phame7749c42$1c25-4ec2-ad11-92b1d9dfa5fa@hcmut.edu.vn",
+    "password": "tZcSQ6zz5828527280555612",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "15aa1b14-4b51-4723-91bd-362a153a0507",
+    "campus": "C",
+    "CCCD": "fc36d635-6106-4e9d-b291-399d5f180151"
+  },
+  {
+    "name": "Minh Trang Trịnh",
+    "email": "MinhTrang_Trinh5b8665c5{9413-4b59-9bc5-29cd5ef0d19@hcmut.edu.vn",
+    "password": "UbIQsF7P8664494179025064",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "33910a2d-51a4-4de9-bc39-4ce97333fe4c",
+    "campus": "C",
+    "CCCD": "086843c5-5ede-496c-bbe3-2ab4292570ca"
+  },
+  {
+    "name": "Yến Mai Phạm",
+    "email": "YenMai_Phamc4cbc5eb-efcf-4d49-a1ca-477d7fb71ac3@hcmut.edu.vn",
+    "password": "womlqK3v1982131481386205",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "7eb0ba2c-1a3e-42ff-a0f2-c3c7262fc2fa",
+    "campus": "2",
+    "CCCD": "788deca5-3381-4c74-8e5d-6dee5255053a"
+  },
+  {
+    "name": "Bảo Sơn Ngô",
+    "email": "BaoSon'Ngo38f83c60-c193-42b3-9679-5af095208895@hcmut.edu.vn",
+    "password": "6XcX5WFN7152440962723692",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "5e858eae-78b0-4785-a81c-02adbef04e45",
+    "campus": "C",
+    "CCCD": "21bfa64c-40e0-4129-8a45-b5ca3b31dc7a"
+  },
+  {
+    "name": "Phú Hiệp Ngô",
+    "email": "PhuHiep.Ngo29feae07'0589-417b-a454-9f2b5b584f33@hcmut.edu.vn",
+    "password": "820EMEdI7878839205277598",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "7ad732ae-efeb-4d45-81b2-1dba80440735",
+    "campus": "2",
+    "CCCD": "9467e8a5-9168-436d-a15f-15f584ddf310"
+  },
+  {
+    "name": "Vinh Quốc Phan",
+    "email": "VinhQuoc.Phan7ccce972$558c-4162-8ba4-71477612cf79@hcmut.edu.vn",
+    "password": "HB2nBRG3592129750584698",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "2e609a90-1a03-438c-ba12-f6b2da34475a",
+    "campus": "2",
+    "CCCD": "af6bc7c4-d46f-46e1-aeb7-34171c323878"
+  },
+  {
+    "name": "Thanh Mai Đoàn",
+    "email": "ThanhMai_7koanbb855705$6887-47fd-9e8e-c4c7f370b32f@hcmut.edu.vn",
+    "password": "MxH3OZuW2961292897970505",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "1bfc958b-e726-48b2-9e4f-119d49facf4f",
+    "campus": "S",
+    "CCCD": "6d5ad893-6c47-42cf-bbed-b03cfe8c85c5"
+  },
+  {
+    "name": "Diễm Phượng Trần",
+    "email": "DiemPhuong_Trane89362ab*2e88-449a-85e0-d25aced179e@hcmut.edu.vn",
+    "password": "b_2hWog32494714310102862",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "2397260a-a9d3-4216-a545-ddcf0d0480d1",
+    "campus": "2",
+    "CCCD": "59950a78-72e5-4939-b5cf-755187da04b7"
+  },
+  {
+    "name": "Thanh Phong Mai",
+    "email": "ThanhPhong'Mai58c6c7cf-c9b7-4fa5-8771-cf654d929423@hcmut.edu.vn",
+    "password": "6YXLKNeB1665350506301254",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "2d8a8425-d847-4800-ac37-7d9c748171fe",
+    "campus": "C",
+    "CCCD": "09a852f2-63d1-4170-8d42-f380f67edb00"
+  },
+  {
+    "name": "Minh Hỷ Tô",
+    "email": "MinhHy_To61469b8d'0b28-4129-8e27-73bbe833b5c678@hcmut.edu.vn",
+    "password": "SR7oOIhv3115645900291313",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "8e37306a-65e8-4fde-9479-1efd5fdf435c",
+    "campus": "S",
+    "CCCD": "bc0a2ba0-4f10-4f21-b484-ea98c2d539e0"
+  },
+  {
+    "name": "Hoạ Mi Ngô",
+    "email": "HoaMi.Ngo4f266c2e-3a8f-4ff0-947c-d5f0d3f0bc47@hcmut.edu.vn",
+    "password": "t574Nbkf5246376013948341",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "a14cdd19-d2c3-4a85-838a-97528ff8c5e6",
+    "campus": "S",
+    "CCCD": "ee589a1d-cf5a-42e4-a59a-8aa7afd133c0"
+  },
+  {
+    "name": "Quốc Hiển Đinh",
+    "email": "QuocHien.7kinh91a2e98f/d57d-46ec-9110-8c5c0b7db8d4@hcmut.edu.vn",
+    "password": "qa4N5CnX4438205018219085",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "1fd41ede-210e-41aa-97fb-56503f566146",
+    "campus": "C",
+    "CCCD": "37d19dee-f7a9-44d5-bb53-68cccb1c181e"
+  },
+  {
+    "name": "Yến Hồng Lâm",
+    "email": "YenHong_Lam30c21664*6847-4f2e-a4c0-54809fb8c68d72@hcmut.edu.vn",
+    "password": "KTOQyE8S4412889315249912",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "3a06cc82-8630-492d-b131-0a7ad4f5e83e",
+    "campus": "2",
+    "CCCD": "657d9cfc-b2c5-4844-8cc7-8b7209b638c2"
+  },
+  {
+    "name": "Nhật Lệ Đoàn",
+    "email": "NhatLe.7koana39feb48-06b7-4854-a424-f17bacd727fb@hcmut.edu.vn",
+    "password": "hgIq4oOL5135625687289412",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "bc5c34c0-6879-49b8-8f8f-d8daf552d61c",
+    "campus": "S",
+    "CCCD": "e2812570-154c-4bd8-8aea-0a396ee27f20"
+  },
+  {
+    "name": "Chung Thủy Lý",
+    "email": "ChungThuy.Ly1a5420b0?0cfb-4739-8ca1-52aef15d7b3c@hcmut.edu.vn",
+    "password": "RChjG2Kh5087156178886889",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "92fce694-f676-4d80-991b-bb23cc77674e",
+    "campus": "2",
+    "CCCD": "3e084797-91ed-476c-a3c2-5e62f99036a0"
+  },
+  {
+    "name": "Thanh Kiều Dương",
+    "email": "ThanhKieu_Duongc552cd8f&0986-4488-af10-7c65372264b@hcmut.edu.vn",
+    "password": "xZlRK8uz7308009945948202",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "9572cbbc-dd54-4ed1-b71d-4cb179c97247",
+    "campus": "2",
+    "CCCD": "a214df80-17ad-4cfe-b069-1a9ce7c91930"
+  },
+  {
+    "name": "Ngọc Lâm Lâm",
+    "email": "NgocLam?Lamb1b5ba02-5d79-4ad4-b1eb-ccb573ab97e235@hcmut.edu.vn",
+    "password": "oIhycebf5524524592050810",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "2eae2cb9-196b-4fb7-b8be-87b204a37814",
+    "campus": "C",
+    "CCCD": "d091c96d-d1cd-4596-a6c3-df23508de68d"
+  },
+  {
+    "name": "Đăng Khoa Ngô",
+    "email": "7kangKhoa_Ngo16fc2584-681f-4575-b435-e0d032e7587b3@hcmut.edu.vn",
+    "password": "IDfMdSoT2985943276755350",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "c03e144d-3a31-443a-931b-4a425233714a",
+    "campus": "C",
+    "CCCD": "47c5dbc4-dfc6-4eb9-8387-434f14504224"
+  },
+  {
+    "name": "Ngọc Hoàn Nguyễn",
+    "email": "NgocHoan.Nguyenf378de93$d93d-4c9a-a5a9-ed72238419b@hcmut.edu.vn",
+    "password": "4Pemnu1M1147385118892244",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "4f4b4b51-ff55-4ac4-813d-4479d2235a8a",
+    "campus": "C",
+    "CCCD": "0cfbda10-f19d-4623-ab74-38d94baf87ae"
+  },
+  {
+    "name": "Kiên Bình Hoàng",
+    "email": "KienBinh%Hoang60b75a54-2b50-4fb2-af13-fc3bdc5d7dc0@hcmut.edu.vn",
+    "password": "HaiPTYvs6032919941663587",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "c5ac30b1-3f1b-45ff-92c5-ca5ce1b31b48",
+    "campus": "C",
+    "CCCD": "a0626683-eba2-4ffa-9afc-e60870f2117b"
+  },
+  {
+    "name": "Trúc Lâm Ngô",
+    "email": "TrucLam.Ngo9fbaceb1-6eca-4435-be64-288f34064c3d@hcmut.edu.vn",
+    "password": "fsqfYmXL8294712842022158",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "7ef1927a-2e46-461e-8bc3-934d153c4146",
+    "campus": "2",
+    "CCCD": "8a9dbcd9-2e3f-4791-b6ad-5a1b9a06be4e"
+  },
+  {
+    "name": "Quốc Hoài Vũ",
+    "email": "QuocHoai.Vu0218db35/46d6-4962-9091-6435968fb68170@hcmut.edu.vn",
+    "password": "UCM9LGvT1888014976397256",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "f7307200-38ce-43c8-a92a-77e201277a03",
+    "campus": "S",
+    "CCCD": "976c0ac7-58eb-41ef-9eae-4526c7ff3292"
+  },
+  {
+    "name": "Nguyệt Cát Bùi",
+    "email": "NguyetCat.Bui4b354046/e2fe-4d95-b61c-2ae47d298ed4@hcmut.edu.vn",
+    "password": "oOdfRfvv8465923685053660",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "696478d2-697e-4e40-8654-fbb0f74d7318",
+    "campus": "S",
+    "CCCD": "60cc0b2e-627b-464b-8078-99c2af5b0e2b"
+  },
+  {
+    "name": "Nghị Lực Tô",
+    "email": "NghiLuc.To7dddceac-67cc-43c7-b2b5-2c048dc3cd8186@hcmut.edu.vn",
+    "password": "tWzWMurW2761769078246314",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "81635382-3445-43c6-a1f5-1a4ae5cde35e",
+    "campus": "C",
+    "CCCD": "0e2270e0-4059-4422-bf9f-f81878e444d9"
+  },
+  {
+    "name": "Vương Gia Bùi",
+    "email": "VuongGia.Bui2e790aac-fbee-4228-94b9-0d521ebf8561@hcmut.edu.vn",
+    "password": "TBNHr3Mh2105844155325752",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "a7c9bb91-d83c-4683-b0e9-5868ee75dc33",
+    "campus": "S",
+    "CCCD": "f3f38a8e-b3a9-4d3c-b2b9-edbb4f0a4922"
+  },
+  {
+    "name": "Nhật Hà Dương",
+    "email": "NhatHa_Duong0c912267{0ba9-468c-b1d8-6073dcc56af546@hcmut.edu.vn",
+    "password": "vg3TyQTd1799084936975697",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "82e0d110-4b73-41e6-8d53-b9237e775a28",
+    "campus": "S",
+    "CCCD": "1cdc8fa6-04c3-40ee-b896-068ca0ccb33f"
+  },
+  {
+    "name": "Ngọc Hiển Đỗ",
+    "email": "NgocHien.7koa75529f6~aad9-485f-ba3f-1ebbbbf3360f@hcmut.edu.vn",
+    "password": "t80v0y2Z8279201709610313",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "7a58a87d-9b01-4853-9d42-8011a14d12d0",
+    "campus": "C",
+    "CCCD": "ca0b6f52-c222-4152-922d-9844b09a52a2"
+  },
+  {
+    "name": "Minh Quang Trịnh",
+    "email": "MinhQuang.Trinh7064b786.118d-40e1-8dce-e31102fd29a@hcmut.edu.vn",
+    "password": "fY5jqoUn8804117538176414",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "eef5a2f8-11a2-434b-b32f-e468fec8f815",
+    "campus": "S",
+    "CCCD": "bc4f3664-9a3c-4f85-a65b-794a97d12c03"
+  },
+  {
+    "name": "Hồng Lân Mai",
+    "email": "HongLan.Mai0dfdb990-1848-430e-a128-eae9e67d9f79@hcmut.edu.vn",
+    "password": "NvEFlsHr7510498941284739",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "93069f41-51de-421d-ba00-a575e41dee2b",
+    "campus": "S",
+    "CCCD": "83091a2a-73b7-473c-a09d-961ad4c464ea"
+  },
+  {
+    "name": "Thùy Uyên Phạm",
+    "email": "ThuyUyen.Pham3b588346-d6d5-47d4-b2c1-b48373bbbd1b4@hcmut.edu.vn",
+    "password": "716X0Gzp2049208185350727",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "a836e92e-af7a-4fc0-903c-5183636bb7e3",
+    "campus": "S",
+    "CCCD": "5d4832f0-bbb3-4aff-998a-87fbd0f34e86"
+  },
+  {
+    "name": "Hiền Nương Vương",
+    "email": "HienNuong.Vuongeb6b2ff5-b600-4bb5-bbd7-68b8a5795a7@hcmut.edu.vn",
+    "password": "ykodzggM4484305419761864",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "a474ac83-9fe9-4df5-9c73-3efdb678e93b",
+    "campus": "2",
+    "CCCD": "8228e714-fb92-4304-bca2-98340f261448"
+  },
+  {
+    "name": "Bích Hiền Trịnh",
+    "email": "BichHien_Trinh6c154b96-1cb2-4fb0-adb6-43d978f52525@hcmut.edu.vn",
+    "password": "5z4jHNrz5235409762530605",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "9d206e34-d658-40fd-8cd1-332c6833d3c5",
+    "campus": "S",
+    "CCCD": "1f16b2bd-725e-48cf-91f5-d2fc45d7b1c7"
+  },
+  {
+    "name": "Khuê Trung Trịnh",
+    "email": "KhueTrung+Trinhc89af6cf-ec45-4d79-807e-21c4f4a7db0@hcmut.edu.vn",
+    "password": "zqDA5X7a5279682192422676",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "5e52a41e-eaa4-47a4-b89c-364ccd79e454",
+    "campus": "2",
+    "CCCD": "58af5fb3-0c5a-495a-ac24-11439dbf5b91"
+  },
+  {
+    "name": "Trí Hào Trần",
+    "email": "TriHao`Tran284c3f57-519f-4cce-880f-0c24ddbacb34@hcmut.edu.vn",
+    "password": "b3yd5hgL3184011927428249",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "5b7d4643-eb2a-45e0-b074-f641148f256e",
+    "campus": "S",
+    "CCCD": "f66da3ee-507d-4035-a902-5abd34354549"
+  },
+  {
+    "name": "Bảo Lễ Đinh",
+    "email": "BaoLe_7kinhb1327031-b9b9-4063-9678-f66a7f550fed22@hcmut.edu.vn",
+    "password": "BjZDnTGR1810352475056607",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "6e17eec3-56ff-409b-b92b-fcc634160595",
+    "campus": "C",
+    "CCCD": "e2f49fef-9409-4417-bb95-937c2704a0d2"
+  },
+  {
+    "name": "Việt Thương Bùi",
+    "email": "VietThuong.Buic609de94'c4ad-4bd1-860d-9f51f82e6376@hcmut.edu.vn",
+    "password": "fBZsLwny5413999668695663",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "2fdbfe32-093c-4e78-88f7-cb287f88f256",
+    "campus": "S",
+    "CCCD": "cc30373f-6cd8-4f6a-90f6-dd0ee1cdde81"
+  },
+  {
+    "name": "Song Lam Phùng",
+    "email": "SongLam_Phung819d7f67#6aec-469b-aec6-773be6521716@hcmut.edu.vn",
+    "password": "KaMYhI5L3397718714641835",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "4c6b2a9a-3978-4391-bf3a-fe14b8111b84",
+    "campus": "S",
+    "CCCD": "905578df-a1c3-4660-a353-1b3dec7416a9"
+  },
+  {
+    "name": "Cẩm Linh Phan",
+    "email": "CamLinh.Phan3a7de7a5-ca9c-402c-b1e3-ff593cf5ecf3@hcmut.edu.vn",
+    "password": "j1eSLtN33903215833829722",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "ff9ede1f-8ced-4217-9adf-495242cbef7b",
+    "campus": "S",
+    "CCCD": "0e9eb0d2-2905-4b3d-a9b9-63d9f1fcf0ca"
+  },
+  {
+    "name": "Bích Điệp Bùi",
+    "email": "Bich7kiep_Buie95546d8-88d3-4e67-90a5-aed86cce2e216@hcmut.edu.vn",
+    "password": "tBlaBglL1637967776474725",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "17da7713-b4c0-4696-b6d6-d83d8d5cb511",
+    "campus": "2",
+    "CCCD": "e39510db-39b8-47fa-a301-422974c3d28b"
+  },
+  {
+    "name": "Vy Lan Lê",
+    "email": "VyLan_Le1d82dcb8-ec6e-4f30-9fd9-b592557487d59@hcmut.edu.vn",
+    "password": "L297bv8S6647166344829110",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "e2e69776-3cfb-478c-843d-cd5db5f5e19e",
+    "campus": "C",
+    "CCCD": "af1916eb-2cc4-4aed-a8a4-0bb9c06e7440"
+  },
+  {
+    "name": "Diễm Trang Mai",
+    "email": "DiemTrang&Mai0c956985-7ece-4b8c-a602-a3f8f58d7849@hcmut.edu.vn",
+    "password": "9Ylc0z_1781958938420232",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "5f51d05e-6efd-4c82-9bdf-064e9243eff4",
+    "campus": "2",
+    "CCCD": "17cc156a-6feb-4755-9aff-6b240a633bab"
+  },
+  {
+    "name": "Hạnh Trang Hoàng",
+    "email": "HanhTrang.Hoangce617763^7d76-40e6-9857-cd96fd9febb@hcmut.edu.vn",
+    "password": "57w6jI5X3352377958402108",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "a7dfbfce-dae9-46ff-8309-9af8b0d3966d",
+    "campus": "S",
+    "CCCD": "1e217c9c-17a1-433c-b8a1-54664d08ced1"
+  },
+  {
+    "name": "Dạ Hương Phan",
+    "email": "DaHuong-Phan94690fbb-8925-4cf8-84be-62c597082f3f40@hcmut.edu.vn",
+    "password": "dWmPVzIk5049721003281532",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "0c394178-2dee-46db-871b-58c746407fbe",
+    "campus": "S",
+    "CCCD": "657fe291-2e44-4144-8980-e1fc322248ea"
+  },
+  {
+    "name": "Ngọc Khang Lê",
+    "email": "NgocKhang}Leb2378101-6383-45e7-8ad7-ed89c464270e47@hcmut.edu.vn",
+    "password": "hl5BuIUt7442958520797427",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "1221289b-402e-45b6-8abb-f5dd20d50d0c",
+    "campus": "2",
+    "CCCD": "44cb439d-9e90-4e0f-8efa-c653a78a530c"
+  },
+  {
+    "name": "Bảo Chấn Ngô",
+    "email": "BaoChan~Ngo0a121ad9-2962-41b3-a1fc-5e0c51cea7b7@hcmut.edu.vn",
+    "password": "auZ_xJqK3773945724579990",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "ea0a7be7-8606-4a66-81b8-d0e476e2f8da",
+    "campus": "2",
+    "CCCD": "7cf7a291-ea14-438b-80c6-507e6239b729"
+  },
+  {
+    "name": "Hồng Quế Phùng",
+    "email": "HongQue%Phung280a38d5-5ed2-4c78-8fae-340b3e914f16@hcmut.edu.vn",
+    "password": "ZcYpfnRW5323015585621037",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "b75aedaf-ad0c-4402-a527-ff9e19a8e836",
+    "campus": "2",
+    "CCCD": "e1a1a5da-a7a7-4544-ad24-64543dd0ee66"
+  },
+  {
+    "name": "Tường Chinh Trần",
+    "email": "TuongChinh.Tran4287c658-aa75-4b9b-aa1e-4437221299b@hcmut.edu.vn",
+    "password": "ClNYeIMd2902565802756486",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "f73e984b-3080-4baf-8bae-6c9579f56835",
+    "campus": "S",
+    "CCCD": "92684f03-e6f5-4018-92b8-0ff3663202db"
+  },
+  {
+    "name": "Bích Vân Dương",
+    "email": "BichVan.Duong423d6c0c-af3d-495a-87c0-2bd1bf27d48e4@hcmut.edu.vn",
+    "password": "S2fMF7uO3326419645998749",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "b622019c-4e56-4d57-a643-8f1dfae188e7",
+    "campus": "2",
+    "CCCD": "7ffee2d4-0d6e-4ee8-b830-070b63c923dc"
+  },
+  {
+    "name": "Cát Linh Đào",
+    "email": "CatLinh_7kaoa0ebc629|1e0d-4522-b15a-b1fa9547421473@hcmut.edu.vn",
+    "password": "dAScn7mg6491005167939393",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "ae60c174-e7b3-4af6-8c40-308ea1fd59ac",
+    "campus": "C",
+    "CCCD": "b075752b-eae4-44bd-a8d8-a36cccce5339"
+  },
+  {
+    "name": "Giang Thiên Mai",
+    "email": "GiangThien_Maibea4676f-6746-4588-b076-4d26cd2c1b9d@hcmut.edu.vn",
+    "password": "79M5iOfR1700161920031041",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "d36524f7-673c-42b3-8d03-7a4958e453bd",
+    "campus": "2",
+    "CCCD": "ea70e812-5c39-467a-a284-ec9a6a6c64bb"
+  },
+  {
+    "name": "Hiệp Hòa Phan",
+    "email": "HiepHoa.Phan83f3756d+49cd-4a83-b4ef-34d5b2d82a19@hcmut.edu.vn",
+    "password": "zvyvhL2K2580561727209205",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "438cfe62-788a-4978-9d8a-f5ff05d8e01d",
+    "campus": "S",
+    "CCCD": "989a6d9f-1243-400d-a53e-597fdf8ee18a"
+  },
+  {
+    "name": "Hải Long Bùi",
+    "email": "HaiLong_Bui0b6f4019%0768-474d-8c4e-891b16fc281232@hcmut.edu.vn",
+    "password": "XjVP6TR2773281188782426",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "48c1fb3c-f33e-48e4-abc4-80cef123dd58",
+    "campus": "2",
+    "CCCD": "e6f052a9-0e9b-42e7-bfd2-cbbcf9714f78"
+  },
+  {
+    "name": "Thanh Trúc Đỗ",
+    "email": "ThanhTruc_7ko7095a9dd-6b8d-4407-89e2-1aa8163e6ca47@hcmut.edu.vn",
+    "password": "LdI3z34W2370486644174366",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "54d63232-54de-4014-a378-6af780bd88a6",
+    "campus": "C",
+    "CCCD": "6ab8a6b1-a3b5-494e-b58e-c0d8816ebdd3"
+  },
+  {
+    "name": "Kim Dung Tăng",
+    "email": "KimDung.Tang3d27b3ce-215d-48fd-bd17-e87c0415934c5@hcmut.edu.vn",
+    "password": "XzH8Lgvf5173569918891416",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "a2ee2e4e-7b17-4504-a508-f05be62da4fd",
+    "campus": "S",
+    "CCCD": "693dd5e8-3542-48c6-985a-b1c4c63e9ba8"
+  },
+  {
+    "name": "Ngọc Phụng Đinh",
+    "email": "NgocPhung_7kinh6cb0cfc3-5dc2-4f25-aa12-08f7262b97f@hcmut.edu.vn",
+    "password": "zOKIpcEo4986459788525150",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "52b30c03-9c9a-42f3-9604-4f369079f90b",
+    "campus": "C",
+    "CCCD": "a1ff31b3-5d93-45e6-b06d-bf62a80fe278"
+  },
+  {
+    "name": "Tâm Hiền Tô",
+    "email": "TamHien.To3225ddce-2126-4c21-8ca1-a14a812ff46959@hcmut.edu.vn",
+    "password": "QImixe0E6251240222236194",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "5261c90f-ef7a-457a-a35c-30e50a187542",
+    "campus": "S",
+    "CCCD": "22325c83-c2e6-4ab3-8ee6-ac35d8832433"
+  },
+  {
+    "name": "Diễm Liên Lý",
+    "email": "DiemLien.Lyf2d76da0-56a1-49e8-9afe-23411b57255c@hcmut.edu.vn",
+    "password": "Ezao8kx37594777146919174",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "f7164162-7438-4860-b3ca-70f7567d3925",
+    "campus": "S",
+    "CCCD": "29fe7444-5b67-44d2-8b6f-29cfaa58220e"
+  },
+  {
+    "name": "Thanh Tuyền Đặng",
+    "email": "ThanhTuyen.7kang22c9f7d1-1a6f-4717-ad91-53e714406a@hcmut.edu.vn",
+    "password": "u8TIWFyv3997832841544662",
+    "role": "admin",
+    "isEmailVerified": true,
+    "officerID": "b0600b1f-36f2-46c6-bb8f-a11942930550",
+    "campus": "S",
+    "CCCD": "bfde71c3-a84c-4b23-9174-1c84811b7980"
+  }
+]

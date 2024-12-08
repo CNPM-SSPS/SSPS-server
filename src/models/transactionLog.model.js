@@ -1,6 +1,9 @@
 import mongoose from 'mongoose';
 import { toJSON } from './plugins/index.js';
 
+/**
+ * @type {mongoose.SchemaDefinitionProperty}
+ */
 const transactionLogSchema = mongoose.Schema({
   studentID: {
     type: mongoose.SchemaTypes.ObjectId,
