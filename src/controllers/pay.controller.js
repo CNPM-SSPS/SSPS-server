@@ -56,7 +56,7 @@ export const getPaymentHistory = async (req, res) => {
 
 export const getPayments = async (req, res) => {
   try {
-    const history = await TransactionLog.sort({ createdAt: -1 });
+    const history = await TransactionLog.find().sort({ createdAt: -1 });
     res.json(history);
   } catch (error) {
     res.status(500).json({ message: error.message });

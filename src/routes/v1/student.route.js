@@ -92,7 +92,7 @@ export default studentRouter;
  *               type: object
  *               properties:
  *                 user:
- *                   $ref: '#/components/schemas/User'
+ *
  */
 
 /**
@@ -127,7 +127,7 @@ export default studentRouter;
  *               type: object
  *               properties:
  *                 user:
- *                   $ref: '#/components/schemas/User'
+ *
  */
 
 /**
@@ -168,7 +168,7 @@ export default studentRouter;
  *             schema:
  *               type: array
  *               items:
- *                 $ref: '#/components/schemas/SupportTicket'
+ *
  */
 
 /**
@@ -202,7 +202,7 @@ export default studentRouter;
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/SupportTicket'
+ *
  */
 
 //Upload file
